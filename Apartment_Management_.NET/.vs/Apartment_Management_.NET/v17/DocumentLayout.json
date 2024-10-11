@@ -1,0 +1,176 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\HK1 - N\u0103m 3\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|D:\\HK1 - N\u0103m 3\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\apartment_management\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|d:\\hk1 - n\u0103m 3\\.net---uit-2024-2025\\apartment_management_.net\\apartment_management\\usercontrols\\province.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\usercontrols\\province.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|d:\\hk1 - n\u0103m 3\\.net---uit-2024-2025\\apartment_management_.net\\apartment_management\\usercontrols\\province.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\usercontrols\\province.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|D:\\HK1 - N\u0103m 3\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\apartment_management\\usercontrols\\infocard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\usercontrols\\infocard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|d:\\hk1 - n\u0103m 3\\.net---uit-2024-2025\\apartment_management_.net\\apartment_management\\usercontrols\\infocard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\usercontrols\\infocard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|d:\\hk1 - n\u0103m 3\\.net---uit-2024-2025\\apartment_management_.net\\apartment_management\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|D:\\HK1 - N\u0103m 3\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\apartment_management\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|d:\\hk1 - n\u0103m 3\\.net---uit-2024-2025\\apartment_management_.net\\apartment_management\\usercontrols\\menubutton.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\usercontrols\\menubutton.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|d:\\hk1 - n\u0103m 3\\.net---uit-2024-2025\\apartment_management_.net\\apartment_management\\usercontrols\\menubutton.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\usercontrols\\menubutton.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Province.xaml",
+              "DocumentMoniker": "D:\\HK1 - N\u0103m 3\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\UserControls\\Province.xaml",
+              "RelativeDocumentMoniker": "Apartment_Management\\UserControls\\Province.xaml",
+              "ToolTip": "D:\\HK1 - N\u0103m 3\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\UserControls\\Province.xaml",
+              "RelativeToolTip": "Apartment_Management\\UserControls\\Province.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-11T08:14:38.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "InfoCard.xaml.cs",
+              "DocumentMoniker": "D:\\HK1 - N\u0103m 3\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\UserControls\\InfoCard.xaml.cs",
+              "RelativeDocumentMoniker": "Apartment_Management\\UserControls\\InfoCard.xaml.cs",
+              "ToolTip": "D:\\HK1 - N\u0103m 3\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\UserControls\\InfoCard.xaml.cs",
+              "RelativeToolTip": "Apartment_Management\\UserControls\\InfoCard.xaml.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAwC4AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T06:20:59.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\HK1 - N\u0103m 3\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Apartment_Management\\MainWindow.xaml",
+              "ToolTip": "D:\\HK1 - N\u0103m 3\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\MainWindow.xaml",
+              "RelativeToolTip": "Apartment_Management\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-09T15:19:17.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Province.xaml.cs",
+              "DocumentMoniker": "D:\\HK1 - N\u0103m 3\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\UserControls\\Province.xaml.cs",
+              "RelativeDocumentMoniker": "Apartment_Management\\UserControls\\Province.xaml.cs",
+              "ToolTip": "D:\\HK1 - N\u0103m 3\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\UserControls\\Province.xaml.cs",
+              "RelativeToolTip": "Apartment_Management\\UserControls\\Province.xaml.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAADwvyYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T08:29:33.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\HK1 - N\u0103m 3\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Apartment_Management\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\HK1 - N\u0103m 3\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Apartment_Management\\MainWindow.xaml.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T09:02:53.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "menubutton.xaml",
+              "DocumentMoniker": "D:\\HK1 - N\u0103m 3\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\UserControls\\menubutton.xaml",
+              "RelativeDocumentMoniker": "Apartment_Management\\UserControls\\menubutton.xaml",
+              "ToolTip": "D:\\HK1 - N\u0103m 3\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\UserControls\\menubutton.xaml",
+              "RelativeToolTip": "Apartment_Management\\UserControls\\menubutton.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-11T05:58:50.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InfoCard.xaml",
+              "DocumentMoniker": "D:\\HK1 - N\u0103m 3\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\UserControls\\InfoCard.xaml",
+              "RelativeDocumentMoniker": "Apartment_Management\\UserControls\\InfoCard.xaml",
+              "ToolTip": "D:\\HK1 - N\u0103m 3\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\UserControls\\InfoCard.xaml",
+              "RelativeToolTip": "Apartment_Management\\UserControls\\InfoCard.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-10T08:55:04.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\HK1 - N\u0103m 3\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\App.xaml",
+              "RelativeDocumentMoniker": "Apartment_Management\\App.xaml",
+              "ToolTip": "D:\\HK1 - N\u0103m 3\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\App.xaml",
+              "RelativeToolTip": "Apartment_Management\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-10T04:00:21.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "menubutton.xaml.cs",
+              "DocumentMoniker": "D:\\HK1 - N\u0103m 3\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\UserControls\\menubutton.xaml.cs",
+              "RelativeDocumentMoniker": "Apartment_Management\\UserControls\\menubutton.xaml.cs",
+              "ToolTip": "D:\\HK1 - N\u0103m 3\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\UserControls\\menubutton.xaml.cs",
+              "RelativeToolTip": "Apartment_Management\\UserControls\\menubutton.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T08:32:41.185Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
