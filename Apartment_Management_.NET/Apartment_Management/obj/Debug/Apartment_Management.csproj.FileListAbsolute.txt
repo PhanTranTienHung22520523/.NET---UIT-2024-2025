@@ -33,3 +33,44 @@ D:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Managem
 D:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\UserControls\Province.g.cs
 D:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\UserControls\Province.baml
 D:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\Apartment_Management_Content.g.cs
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\bin\Debug\Apartment_Management.exe.config
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\bin\Debug\Apartment_Management.exe
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\bin\Debug\Apartment_Management.pdb
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\bin\Debug\LiveCharts.dll
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\bin\Debug\LiveCharts.Wpf.dll
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\bin\Debug\MahApps.Metro.IconPacks.Core.dll
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\bin\Debug\MahApps.Metro.IconPacks.Material.dll
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\bin\Debug\LiveCharts.pdb
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\bin\Debug\LiveCharts.xml
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\bin\Debug\LiveCharts.Wpf.pdb
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\bin\Debug\LiveCharts.Wpf.xml
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\bin\Debug\MahApps.Metro.IconPacks.Core.xml
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\bin\Debug\MahApps.Metro.IconPacks.Material.xml
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\Apartment_Management.csproj.AssemblyReference.cache
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\MainWindow.g.cs
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\UserControls\InfoCard.g.cs
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\UserControls\menubutton.g.cs
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\UserControls\Province.g.cs
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\App.g.cs
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\Apartment_Management_Content.g.cs
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\Apartment_Management_MarkupCompile.cache
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\Apartment_Management_MarkupCompile.lref
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\App.baml
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\MainWindow.baml
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\UserControls\InfoCard.baml
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\UserControls\menubutton.baml
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\UserControls\Province.baml
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\Apartment_Management.g.resources
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\Apartment_Management.Properties.Resources.resources
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\Apartment_Management.csproj.GenerateResource.cache
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\Apartment_Management.csproj.CoreCompileInputs.cache
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\Apartmen.367AB822.Up2Date
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\Apartment_Management.exe
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\Apartment_Management.pdb
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\UserControls\BlockCard.g.cs
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\View\AllBlockView.g.cs
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\UserControls\BlockCard.baml
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\View\AllBlockView.baml
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\TestWindow.g.cs
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\TestWindow.baml

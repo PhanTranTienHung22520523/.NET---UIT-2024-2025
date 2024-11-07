@@ -69,6 +69,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="TestWindow.xaml.cs">
+      <DependentUpon>TestWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\BlockCard.xaml.cs">
+      <DependentUpon>BlockCard.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\InfoCard.xaml.cs">
       <DependentUpon>InfoCard.xaml</DependentUpon>
     </Compile>
@@ -77,6 +83,9 @@
     </Compile>
     <Compile Include="UserControls\Province.xaml.cs">
       <DependentUpon>Province.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\AllBlockView.xaml.cs">
+      <DependentUpon>AllBlockView.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -90,6 +99,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="TestWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\BlockCard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UserControls\InfoCard.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -99,6 +116,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControls\Province.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AllBlockView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -134,7 +155,6 @@
     <Folder Include="Assets\Icons\" />
     <Folder Include="Controller\" />
     <Folder Include="Model\" />
-    <Folder Include="View\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Images\ApartmentBackground.png" />

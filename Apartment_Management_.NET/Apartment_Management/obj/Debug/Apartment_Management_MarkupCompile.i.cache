@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\
 Apartment_Management
 none
 false
 DEBUG;TRACE
-D:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\App.xaml
-4-165809271
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\App.xaml
+7200507023
 1-1408928272
-9-559923321
-19-984911823
-MainWindow.xaml;UserControls\InfoCard.xaml;UserControls\menubutton.xaml;UserControls\Province.xaml;
+121357075341
+191720060387
+MainWindow.xaml;TestWindow.xaml;UserControls\BlockCard.xaml;UserControls\InfoCard.xaml;UserControls\menubutton.xaml;UserControls\Province.xaml;View\AllBlockView.xaml;
 
 True
 
