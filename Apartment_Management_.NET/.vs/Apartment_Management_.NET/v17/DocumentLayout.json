@@ -7,16 +7,44 @@
       "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\view\\allblockview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|d:\\ooad\\.net---uit-2024-2025\\apartment_management_.net\\apartment_management\\view\\allblockview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\apartment_management\\view\\blockview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\view\\blockview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|d:\\ooad\\.net---uit-2024-2025\\apartment_management_.net\\apartment_management\\view\\blockview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\view\\blockview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\apartment_management\\view\\allblockview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\view\\allblockview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\apartment_management\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|d:\\ooad\\.net---uit-2024-2025\\apartment_management_.net\\apartment_management\\usercontrols\\blockentitycard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\usercontrols\\blockentitycard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\apartment_management\\usercontrols\\blockentitycard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\usercontrols\\blockentitycard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\apartment_management\\usercontrols\\infocard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\usercontrols\\infocard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\apartment_management\\usercontrols\\infocard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\usercontrols\\infocard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\apartment_management\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\apartment_management\\testwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\testwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\apartment_management\\usercontrols\\menubutton.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\usercontrols\\menubutton.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\apartment_management\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
@@ -27,40 +55,36 @@
       "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|d:\\ooad\\.net---uit-2024-2025\\apartment_management_.net\\apartment_management\\usercontrols\\infocard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\usercontrols\\infocard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\apartment_management\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\apartment_management\\usercontrols\\blockcard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\usercontrols\\blockcard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\apartment_management\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|d:\\ooad\\.net---uit-2024-2025\\apartment_management_.net\\apartment_management\\testwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\testwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|d:\\ooad\\.net---uit-2024-2025\\apartment_management_.net\\apartment_management\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\apartment_management\\usercontrols\\blockcard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\usercontrols\\blockcard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\apartment_management\\usercontrols\\menubutton.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\usercontrols\\menubutton.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\apartment_management\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\apartment_management\\usercontrols\\blockcard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\usercontrols\\blockcard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\apartment_management\\usercontrols\\province.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\usercontrols\\province.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\apartment_management\\usercontrols\\menubutton.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\usercontrols\\menubutton.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\apartment_management\\usercontrols\\province.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\usercontrols\\province.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\apartment_management\\usercontrols\\infocard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\usercontrols\\infocard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,11 +94,87 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
+              "Title": "BlockView.xaml.cs",
+              "DocumentMoniker": "D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\View\\BlockView.xaml.cs",
+              "RelativeDocumentMoniker": "Apartment_Management\\View\\BlockView.xaml.cs",
+              "ToolTip": "D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\View\\BlockView.xaml.cs",
+              "RelativeToolTip": "Apartment_Management\\View\\BlockView.xaml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T16:54:08.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BlockCard.xaml.cs",
+              "DocumentMoniker": "D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\UserControls\\BlockCard.xaml.cs",
+              "RelativeDocumentMoniker": "Apartment_Management\\UserControls\\BlockCard.xaml.cs",
+              "ToolTip": "D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\UserControls\\BlockCard.xaml.cs",
+              "RelativeToolTip": "Apartment_Management\\UserControls\\BlockCard.xaml.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAkwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T14:35:37.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BlockEntityCard.xaml.cs",
+              "DocumentMoniker": "D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\UserControls\\BlockEntityCard.xaml.cs",
+              "RelativeDocumentMoniker": "Apartment_Management\\UserControls\\BlockEntityCard.xaml.cs",
+              "ToolTip": "D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\UserControls\\BlockEntityCard.xaml.cs",
+              "RelativeToolTip": "Apartment_Management\\UserControls\\BlockEntityCard.xaml.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAIwDoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T14:35:05.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\App.xaml.cs",
+              "RelativeDocumentMoniker": "Apartment_Management\\App.xaml.cs",
+              "ToolTip": "D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\App.xaml.cs",
+              "RelativeToolTip": "Apartment_Management\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T13:03:18.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BlockEntityCard.xaml",
+              "DocumentMoniker": "D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\UserControls\\BlockEntityCard.xaml",
+              "RelativeDocumentMoniker": "Apartment_Management\\UserControls\\BlockEntityCard.xaml",
+              "ToolTip": "D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\UserControls\\BlockEntityCard.xaml",
+              "RelativeToolTip": "Apartment_Management\\UserControls\\BlockEntityCard.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-09T09:06:53.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BlockView.xaml",
+              "DocumentMoniker": "D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\View\\BlockView.xaml",
+              "RelativeDocumentMoniker": "Apartment_Management\\View\\BlockView.xaml",
+              "ToolTip": "D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\View\\BlockView.xaml",
+              "RelativeToolTip": "Apartment_Management\\View\\BlockView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-08T08:52:01.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "TestWindow.xaml",
               "DocumentMoniker": "D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\TestWindow.xaml",
               "RelativeDocumentMoniker": "Apartment_Management\\TestWindow.xaml",
@@ -86,20 +186,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
               "Title": "packages.config",
               "DocumentMoniker": "D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\packages.config",
               "RelativeDocumentMoniker": "Apartment_Management\\packages.config",
               "ToolTip": "D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\packages.config",
               "RelativeToolTip": "Apartment_Management\\packages.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-11-07T17:28:02.056Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-07T17:28:02.056Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "AllBlockView.xaml.cs",
               "DocumentMoniker": "D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\View\\AllBlockView.xaml.cs",
               "RelativeDocumentMoniker": "Apartment_Management\\View\\AllBlockView.xaml.cs",
@@ -112,7 +211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 18,
               "Title": "BlockCard.xaml",
               "DocumentMoniker": "D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\UserControls\\BlockCard.xaml",
               "RelativeDocumentMoniker": "Apartment_Management\\UserControls\\BlockCard.xaml",
@@ -124,7 +223,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "App.config",
               "DocumentMoniker": "D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\App.config",
               "RelativeDocumentMoniker": "Apartment_Management\\App.config",
@@ -149,7 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 19,
               "Title": "Province.xaml",
               "DocumentMoniker": "D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\UserControls\\Province.xaml",
               "RelativeDocumentMoniker": "Apartment_Management\\UserControls\\Province.xaml",
@@ -161,20 +260,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 6,
               "Title": "InfoCard.xaml.cs",
               "DocumentMoniker": "D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\UserControls\\InfoCard.xaml.cs",
               "RelativeDocumentMoniker": "Apartment_Management\\UserControls\\InfoCard.xaml.cs",
               "ToolTip": "D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\UserControls\\InfoCard.xaml.cs",
               "RelativeToolTip": "Apartment_Management\\UserControls\\InfoCard.xaml.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAwC4AAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAuwBwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T06:20:59.367Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 14,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Apartment_Management\\MainWindow.xaml",
@@ -186,7 +285,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 20,
               "Title": "Province.xaml.cs",
               "DocumentMoniker": "D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\UserControls\\Province.xaml.cs",
               "RelativeDocumentMoniker": "Apartment_Management\\UserControls\\Province.xaml.cs",
@@ -194,12 +293,11 @@
               "RelativeToolTip": "Apartment_Management\\UserControls\\Province.xaml.cs",
               "ViewState": "AgIAABcAAAAAAAAAAADwvyYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T08:29:33.591Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-11T08:29:33.591Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Apartment_Management\\MainWindow.xaml.cs",
@@ -212,7 +310,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "menubutton.xaml",
               "DocumentMoniker": "D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\UserControls\\menubutton.xaml",
               "RelativeDocumentMoniker": "Apartment_Management\\UserControls\\menubutton.xaml",
@@ -224,7 +322,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "InfoCard.xaml",
               "DocumentMoniker": "D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\UserControls\\InfoCard.xaml",
               "RelativeDocumentMoniker": "Apartment_Management\\UserControls\\InfoCard.xaml",
@@ -236,7 +334,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "App.xaml",
               "DocumentMoniker": "D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\App.xaml",
               "RelativeDocumentMoniker": "Apartment_Management\\App.xaml",
@@ -248,13 +346,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 10,
               "Title": "menubutton.xaml.cs",
               "DocumentMoniker": "D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\UserControls\\menubutton.xaml.cs",
               "RelativeDocumentMoniker": "Apartment_Management\\UserControls\\menubutton.xaml.cs",
               "ToolTip": "D:\\ooad\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\UserControls\\menubutton.xaml.cs",
               "RelativeToolTip": "Apartment_Management\\UserControls\\menubutton.xaml.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAwBUAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAwCMAAABiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T08:32:41.185Z",
               "EditorCaption": ""

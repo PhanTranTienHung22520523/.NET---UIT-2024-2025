@@ -6,7 +6,7 @@
              xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
              xmlns:local="clr-namespace:Apartment_Management.UserControls"
              mc:Ignorable="d" 
-             d:DesignHeight="250" d:DesignWidth="300">
+            >
     <Border Margin="0 0 0 20">
         <Border.Style>
             <Style TargetType="Border" BasedOn="{StaticResource mainBorder}">
@@ -30,8 +30,8 @@
                 </Grid.ColumnDefinitions>
                 <Grid>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="auto"/>
                         <RowDefinition Height="*"/>
+                        <RowDefinition Height="auto"/>
                     </Grid.RowDefinitions>
                     <StackPanel>
                         <TextBlock FontSize="13" Foreground="#7166f9"/>
@@ -61,9 +61,9 @@
                     
                 </Grid>
                 <StackPanel Grid.Column="1" VerticalAlignment="Bottom" >
-                    
+                    <Button Style="{StaticResource menuButton}">
                     <Icon:PackIconMaterial Kind="DotsHorizontal" Foreground="#dfe1e3"  VerticalAlignment="Center" />
-
+                    </Button>
                 </StackPanel>
             </Grid>
 

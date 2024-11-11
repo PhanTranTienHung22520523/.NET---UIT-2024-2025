@@ -13,17 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Apartment_Management.UserControls
+namespace Apartment_Management.View
 {
     /// <summary>
-    /// Interaction logic for BlockCard.xaml
+    /// Interaction logic for BlockView.xaml
     /// </summary>
-    public partial class BlockCard : UserControl
+    public partial class BlockView : UserControl
     {
-        public BlockCard()
+        public BlockView()
         {
             InitializeComponent();
         }
     }
-
 }

@@ -74,3 +74,7 @@ D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\
 D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\View\AllBlockView.baml
 D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\TestWindow.g.cs
 D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\TestWindow.baml
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\View\BlockView.g.cs
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\View\BlockView.baml
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\UserControls\BlockEntityCard.g.cs
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\UserControls\BlockEntityCard.baml

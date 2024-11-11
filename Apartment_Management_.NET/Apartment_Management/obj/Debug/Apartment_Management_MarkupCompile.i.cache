@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\App.xaml
-7200507023
+9-109692021
 1-1408928272
-121357075341
+14-1388896407
 191720060387
-MainWindow.xaml;TestWindow.xaml;UserControls\BlockCard.xaml;UserControls\InfoCard.xaml;UserControls\menubutton.xaml;UserControls\Province.xaml;View\AllBlockView.xaml;
+MainWindow.xaml;TestWindow.xaml;UserControls\BlockCard.xaml;UserControls\BlockEntityCard.xaml;UserControls\InfoCard.xaml;UserControls\menubutton.xaml;UserControls\Province.xaml;View\AllBlockView.xaml;View\BlockView.xaml;
 
 True
 
