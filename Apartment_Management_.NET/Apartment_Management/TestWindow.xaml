@@ -10,7 +10,7 @@
     <Grid>
         <Grid>
             <!-- Chèn UserControl AllBlockView vào -->
-            <usercontrol:BlockView />
+            <usercontrol:AllRoomView />
         </Grid>
     </Grid>
 </Window>

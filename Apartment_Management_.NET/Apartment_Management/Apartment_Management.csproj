@@ -87,8 +87,14 @@
     <Compile Include="UserControls\Province.xaml.cs">
       <DependentUpon>Province.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\RoomCard.xaml.cs">
+      <DependentUpon>RoomCard.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\AllBlockView.xaml.cs">
       <DependentUpon>AllBlockView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\AllRoomView.xaml.cs">
+      <DependentUpon>AllRoomView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\BlockView.xaml.cs">
       <DependentUpon>BlockView.xaml</DependentUpon>
@@ -129,7 +135,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UserControls\RoomCard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\AllBlockView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AllRoomView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

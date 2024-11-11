@@ -29,9 +29,9 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <uc:BlockEntityCard Icon="Account" Title="CƯ DÂN" Number1="200" />
-            <uc:BlockEntityCard Grid.Column="1" Icon="Account" Title="CĂN HỘ"  Number1="200" Other="CÒN TRỐNG: " Number3="20" />
-            <uc:BlockEntityCard Grid.Column="2" Icon="Account" Title="HÓA ĐƠN" Number1="200" Space="/" Number2="500" Other="QUÁ HẠN: " Number3="20"/>
-            <uc:BlockEntityCard Grid.Column="3" Icon="Account" Title="YÊU CẦU" Number1="200" Space="/" Number2="500" />
+            <uc:BlockEntityCard Grid.Column="1" Icon="Home" Title="CĂN HỘ"  Number1="200" Other="CÒN TRỐNG: " Number3="20" />
+            <uc:BlockEntityCard Grid.Column="2" Icon="InvoiceList" Title="HÓA ĐƠN" Number1="200" Space="/" Number2="500" Other="QUÁ HẠN: " Number3="20"/>
+            <uc:BlockEntityCard Grid.Column="3" Icon="CommentQuestionOutline" Title="YÊU CẦU" Number1="200" Space="/" Number2="500" />
         </Grid>
     </Grid>
 </UserControl>
