@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\App.xaml
-4-165809271
+142108118561
 1-1408928272
-9-559923321
+39-440721819
 19-984911823
-MainWindow.xaml;UserControls\InfoCard.xaml;UserControls\menubutton.xaml;UserControls\Province.xaml;
+MainWindow.xaml;UserControls\InfoCard.xaml;UserControls\menubutton.xaml;UserControls\Province.xaml;View\Account.xaml;View\AddContract.xaml;View\ContractManagement.xaml;View\DwellerManagement.xaml;View\EmployeeManagement.xaml;View\FinanceManagement.xaml;View\Home.xaml;View\OrderManagement.xaml;View\ReceiptManagement.xaml;View\RoomManagement.xaml;
 
 True
 

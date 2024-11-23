@@ -62,5 +62,19 @@ namespace Apartment_Management.UserControls
 
         public static readonly DependencyProperty IsActiveProperty =
             DependencyProperty.Register("IsActive", typeof(bool), typeof(InfoCard));
-    }
+
+		public event RoutedEventHandler Click
+		{
+			add { AddHandler(ClickEvent, value); }
+			remove { RemoveHandler(ClickEvent, value); }
+		}
+
+		public static readonly RoutedEvent ClickEvent =
+			EventManager.RegisterRoutedEvent("Click", RoutingStrategy.Bubble, typeof(RoutedEventHandler), typeof(InfoCard));
+
+		private void Button_Click(object sender, RoutedEventArgs e)
+		{
+			RaiseEvent(new RoutedEventArgs(ClickEvent));
+		}
+	}
 }

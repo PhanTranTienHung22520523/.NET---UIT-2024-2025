@@ -28,12 +28,12 @@
                         <Setter Property="Foreground" Value="#19dc2d"/>
 
                         <Style.Triggers>
-                            <DataTrigger Binding="{Binding ElementName=province, Path=IsLevleUp}" Value="True">
+                            <DataTrigger Binding="{Binding ElementName=province, Path=IsLevelUp}" Value="True">
                                 <Setter Property="Kind" Value="ArrowRightTop"/>
                                 <Setter Property="Foreground" Value="#19dc2d"/>
                             </DataTrigger>
 
-                            <DataTrigger Binding="{Binding ElementName=province, Path=IsLevleUp}" Value="False">
+                            <DataTrigger Binding="{Binding ElementName=province, Path=IsLevelUp}" Value="False">
                                 <Setter Property="Kind" Value="ArrowRightBottom"/>
                                 <Setter Property="Foreground" Value="#f72353"/>
                             </DataTrigger>

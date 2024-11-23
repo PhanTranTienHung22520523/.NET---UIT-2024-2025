@@ -69,6 +69,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Model\Block.cs" />
+    <Compile Include="Model\Contract.cs" />
+    <Compile Include="Model\Dweller.cs" />
+    <Compile Include="Model\Employee.cs" />
+    <Compile Include="Model\Order.cs" />
+    <Compile Include="Model\Payment.cs" />
+    <Compile Include="Model\Receipt.cs" />
+    <Compile Include="Model\Room.cs" />
+    <Compile Include="Model\Stuff.cs" />
+    <Compile Include="Model\TypeRoom.cs" />
+    <Compile Include="Model\User.cs" />
     <Compile Include="UserControls\InfoCard.xaml.cs">
       <DependentUpon>InfoCard.xaml</DependentUpon>
     </Compile>
@@ -77,6 +88,45 @@
     </Compile>
     <Compile Include="UserControls\Province.xaml.cs">
       <DependentUpon>Province.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\Account_View_Model.cs" />
+    <Compile Include="ViewModel\Contract_View_Model.cs" />
+    <Compile Include="ViewModel\Dweller_View_Model.cs" />
+    <Compile Include="ViewModel\Employee_View_Model.cs" />
+    <Compile Include="ViewModel\Finance_View_Model.cs" />
+    <Compile Include="ViewModel\Home_View_Model.cs" />
+    <Compile Include="ViewModel\Order_View_Model.cs" />
+    <Compile Include="ViewModel\Receipt_View_Model.cs" />
+    <Compile Include="ViewModel\Room_View_Model.cs" />
+    <Compile Include="View\Account.xaml.cs">
+      <DependentUpon>Account.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\AddContract.xaml.cs">
+      <DependentUpon>AddContract.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ContractManagement.xaml.cs">
+      <DependentUpon>ContractManagement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DwellerManagement.xaml.cs">
+      <DependentUpon>DwellerManagement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\EmployeeManagement.xaml.cs">
+      <DependentUpon>EmployeeManagement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\FinanceManagement.xaml.cs">
+      <DependentUpon>FinanceManagement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\OrderManagement.xaml.cs">
+      <DependentUpon>OrderManagement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReceiptManagement.xaml.cs">
+      <DependentUpon>ReceiptManagement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\RoomManagement.xaml.cs">
+      <DependentUpon>RoomManagement.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -99,6 +149,46 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControls\Province.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Account.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AddContract.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ContractManagement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\DwellerManagement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\EmployeeManagement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\FinanceManagement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\OrderManagement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ReceiptManagement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\RoomManagement.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -132,9 +222,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\Icons\" />
-    <Folder Include="Controller\" />
-    <Folder Include="Model\" />
-    <Folder Include="View\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Images\ApartmentBackground.png" />

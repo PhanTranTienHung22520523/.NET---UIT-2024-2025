@@ -12,7 +12,7 @@
         WindowStyle="None"
         WindowStartupLocation="CenterScreen"
         Background="Transparent">
-  
+
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="boolToVis"/>
     </Window.Resources>
@@ -27,43 +27,49 @@
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            
-            
-            
-            
+
+
+
+
             <!--Left Menu-->
             <Border Grid.RowSpan="3" Background="#1e2e44" CornerRadius=" 25 0 0 25">
                 <Grid>
                     <StackPanel VerticalAlignment="Top">
-                        
+
                         <!--Ellipses-->
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 30 0 40">
                             <Ellipse Width="8" Height="8" Fill="LightBlue"/>
                             <Ellipse Width="8" Height="8" Fill="LightBlue" Margin="7 0"/>
                             <Ellipse Width="8" Height="8" Fill="LightBlue"/>
                         </StackPanel>
-                        
+
                         <!--MenuButton-->
-                        <uc:menubutton Icon="HomeVariant" IsActive="True"/>
-                        <uc:menubutton Icon="Greenhouse" />
-                        <uc:menubutton Icon="Human" />
-                        <uc:menubutton Icon="OrderAlphabeticalAscending" />
-                        <uc:menubutton Icon="Billboard" />
-                        <uc:menubutton Icon="Assistant" />
-                        <uc:menubutton Icon="Cash" />
+                        <uc:menubutton Icon="HomeVariant"  ToolTip="Home"  Tag="Home" x:Name="Home_View" Click="Home_View_Click" Cursor="Hand"/>
+                        <uc:menubutton Icon="Greenhouse" ToolTip="Room Management"  Tag="RoomManagement" x:Name="Room_Managemen" Click="Room_Managemen_Click" Cursor="Hand"/>
+                        <uc:menubutton Icon="Human" ToolTip="Dweller Management" Tag="DwellerManagement" x:Name="Dweller_Managemen" Click="Dweller_Managemen_Click" Cursor="Hand"/>
+                        <uc:menubutton Icon="HumanEdit" ToolTip="Employee Management"  Tag="EmployeeManagement" x:Name="Employee_Management" Click="Employee_Management_Click" Cursor="Hand"/>
+                        <uc:menubutton Icon="OrderAlphabeticalAscending" ToolTip="Order Management"  Tag="OrderManagement" x:Name="Order_Management" Click="Order_Management_Click" Cursor="Hand"/>
+                        <uc:menubutton Icon="Receipt" ToolTip="Receipt Management" Tag="ReceiptManagement" x:Name="Receipt_Management" Click="Receipt_Management_Click" Cursor="Hand"/>
+                        <uc:menubutton Icon="Passport" ToolTip="Contract Management"  Tag="ContractManagement" x:Name="Contract_Management" Click="Contract_Management_Click" Cursor="Hand"/>
+                        <uc:menubutton Icon="Cash" ToolTip="Finance Management"  Tag="FinanceManagement" x:Name="Finance_Management" Click="Finance_Management_Click" Cursor="Hand"/>
                     </StackPanel>
-                    <uc:menubutton Icon="Power" VerticalAlignment="Bottom" Margin="0 0 0 15"/>
+                    <uc:menubutton Icon="Power" VerticalAlignment="Top" Margin="0,650,0,0" ToolTip="Power Off" Click="menubutton_Click_1" Cursor="Hand"/>
                 </Grid>
             </Border>
-            
+
+            <ContentControl x:Name="MainContent" Grid.Column="1" Margin="20" />
+
             <!--Top Menu-->
+            <!--
             <Grid Grid.Column="1" Margin="30">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="auto"/>
                 </Grid.ColumnDefinitions>
                 
-                <!--Search Textbox-->
+                -->
+            <!--Search Textbox-->
+            <!--
                 <TextBlock Margin="40 0 15 0" VerticalAlignment="Center" Foreground="#9ea4ad" Panel.ZIndex="1"
                            IsHitTestVisible="False" Text="Search here ... "
                            Visibility="{Binding ElementName=textBox, Path=Text.IsEmpty, Converter={StaticResource boolToVis}}"/>
@@ -72,15 +78,14 @@
                                        HorizontalAlignment="Left" 
                                        VerticalAlignment="Center"/>
                 
-                <!--Buttons-->
+                -->
+            <!--Buttons-->
+            <!--
                 <StackPanel Orientation="Horizontal" Grid.Column="1" Margin="20 0 0 0">
                     <Button Style="{StaticResource topMenuButton}">
                         <Icon:PackIconMaterial Kind="Bell" Style="{StaticResource topMenuButtonIcon}" />
                     </Button> 
-                    
-                    <Button Style="{StaticResource topMenuButton}">
-                        <Icon:PackIconMaterial Kind="Bookmark" Style="{StaticResource topMenuButtonIcon}" />
-                    </Button>
+                  
                     
                     <Button Style="{StaticResource topMenuButton}" Background="#1e2e44">
                         <Icon:PackIconMaterial Kind="Account" Style="{StaticResource topMenuButtonIcon}" />
@@ -88,7 +93,9 @@
                 </StackPanel>
             </Grid>
             
+            -->
             <!--MiddleTopSection-->
+            <!--
             <Grid Grid.Row="1" Grid.Column="1" Margin="20 0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
@@ -96,33 +103,45 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 
-                <!--InfoCardsLeft-->
+                -->
+            <!--InfoCardsLeft-->
+            <!--
 
                 <StackPanel Margin="10 0">
-                    <uc:InfoCard Number="30" Title="Average Orders a day"/>
-                    <uc:InfoCard Number="15" Title="Average New Dwellers a day" />
+                    <uc:InfoCard Number="30" Title="Today's Orders"/>
+                    <uc:InfoCard Number="15" Title="This Month's New Dwellers" />
                     <uc:InfoCard Number="90" Title="Filled Room Rate"/>
                 </StackPanel>
 
-                <!--InfoV=CardsRight-->
+                -->
+            <!--InfoV=CardsRight-->
+            <!--
 
                 <StackPanel Margin="10 0" Grid.Column="1">
-                    <uc:InfoCard Number="30" Title="Average Orders a day" />
-                    <uc:InfoCard Number="15" Title="Average Left Dwellers a day" />
-                    <!--<uc:InfoCard Number="90" Title="Filled Room Rate" IsTechnical="False"/>-->
+                    <uc:InfoCard Number="30" Title="Today's Solved Orders" />
+                    <uc:InfoCard Number="15" Title="This Month's New Contracts" />
+                    <uc:InfoCard Number="90" Title="Filled Room Rate" IsTechnical="False"/>
                 </StackPanel>
                 
-                <!--CostSection-->
+                -->
+            <!--CostSection-->
+            <!--
                 <Border Grid.Column="2" Style="{StaticResource mainBorder}" Margin="10 0 10 21.5">
                     <Grid>
-                        <!--Title-->
-                        <TextBlock Text="Income from Services" Style="{StaticResource titleText}"/>
-                        <!--Filter Button-->
+                        -->
+            <!--Title-->
+            <!--
+                        <TextBlock Text="Orders by Months" Style="{StaticResource titleText}"/>
+                        -->
+            <!--Filter Button-->
+            <!--
                         <Button Style="{StaticResource titleButton}" Margin="0 -3 0 0">
                             <Icon:PackIconMaterial Kind="Tune" Style="{StaticResource topMenuButtonIcon}"/>
                         </Button>
                         
-                        <!--Legends-->
+                        -->
+            <!--Legends-->
+            <!--
                         <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0 45 0 0">
                             <Border Width="12" Height="12" Background="LightGreen" CornerRadius="3"/>
                             <TextBlock Text="Public Services" VerticalAlignment="Center" Margin="7 0 20 0" Foreground="#d5d6d9"/>
@@ -131,13 +150,15 @@
                             <TextBlock Text="Residence Services" VerticalAlignment="Center" Margin="7 0 20 0" Foreground="#d5d6d9"/>
                         </StackPanel>
                         
-                        <!--Chart-->
+                        -->
+            <!--Chart-->
+            <!--
                         <lvc:CartesianChart LegendLocation="None" Margin="0 40 0 0">
                             <lvc:CartesianChart.DataTooltip>
                                 <lvc:DefaultTooltip Background="#24336a" Foreground="Pink"/>
                             </lvc:CartesianChart.DataTooltip>
                             <lvc:CartesianChart.AxisX>
-                                <lvc:Axis Foreground="#bcc0c6" ShowLabels="True" Labels="Jan,Feb,Mar,Apr,May,Jun,Jul,Aug">
+                                <lvc:Axis Foreground="#bcc0c6" ShowLabels="True" Labels="Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec">
                                     <lvc:Axis.Separator>
                                         <lvc:Separator StrokeThickness="0" Step="1"/>
                                     </lvc:Axis.Separator>
@@ -152,7 +173,7 @@
                                 </lvc:Axis>
                             </lvc:CartesianChart.AxisY>
                             <lvc:CartesianChart.Series>
-                                <lvc:StackedColumnSeries Fill="LightGreen" MaxColumnWidth="15" Values="300, 250, 400, 500, 600, 600, 500, 500"/>
+                                <lvc:StackedColumnSeries Fill="LightGreen" MaxColumnWidth="15" Values="300, 250, 400, 500, 600, 600, 500, 500, 400, 500, 600, 100"/>
                                 <lvc:StackedColumnSeries Fill="AntiqueWhite" MaxColumnWidth="15" Values="500, 400, 300, 250, 300, 200, 400, 200"/>
                             </lvc:CartesianChart.Series>
                         </lvc:CartesianChart>
@@ -160,37 +181,49 @@
                 </Border>
             </Grid>
             
+            -->
             <!--MiddleBottomSection-->
+            <!--
             <Grid Grid.Row="2" Grid.Column="1">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="450"/>
                 </Grid.ColumnDefinitions>
                 
-                <!--TopCrowdedBlockSection-->
+                -->
+            <!--TopCrowdedBlockSection-->
+            <!--
                 <Border Style="{StaticResource mainBorder}" Margin="30 0 20 30">
                     <Grid>
-                        <!--Title-->
+                        -->
+            <!--Title-->
+            <!--
                         <TextBlock Text="Block Population" Style="{StaticResource titleText}"/>
                         
-                        <!--FilterButton-->
+                        -->
+            <!--FilterButton-->
+            <!--
                         <Button Style="{StaticResource titleButton}">
                             <Icon:PackIconMaterial Kind="Tune" Style="{StaticResource topMenuButtonIcon}"/>
                         </Button>
                         
-                        <!--Legends-->
+                        -->
+            <!--Legends-->
+            <!--
                         <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0 0 40 0">
                             <Border Width="12" Height="12" Background="#7166f9" CornerRadius="3"/>
                             <TextBlock Text="A" VerticalAlignment="Center" Margin="7 0 20 0" Foreground="#d4d6d9"/>
                         </StackPanel>
                         
-                        <!--Chart-->
+                        -->
+            <!--Chart-->
+            <!--
                         <lvc:CartesianChart LegendLocation="None" Margin="0 40 0 0">
                             <lvc:CartesianChart.DataTooltip>
                                 <lvc:DefaultTooltip Background="#101a28" Foreground="#d5e2ff"/>
                             </lvc:CartesianChart.DataTooltip>
                             <lvc:CartesianChart.AxisX>
-                                <lvc:Axis Foreground="#bcc0c6" ShowLabels="True" Labels="Jan,Feb,Mar,Apr,May,Jun,Jul,Aug">
+                                <lvc:Axis Foreground="#bcc0c6" ShowLabels="True" Labels="Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec">
                                     <lvc:Axis.Separator>
                                         <lvc:Separator StrokeThickness="0" Step="1"/>
                                     </lvc:Axis.Separator>
@@ -207,7 +240,7 @@
                             
                             <lvc:CartesianChart.Series>
                                 <lvc:LineSeries StrokeThickness="2" Stroke="#6860e6" PointGeometrySize="0"
-                                                Values="200, 300, 500, 550, 520, 400, 300, 400">
+                                                Values="200, 300, 500, 550, 520, 400, 300, 400, 600, 800, 800, 750">
                                     <lvc:LineSeries.Fill>
                                         <LinearGradientBrush>
                                             <GradientStop Color="#2e3966" Offset="0.4"/>
@@ -221,18 +254,26 @@
                     </Grid>
                 </Border>
                 
-                <!--ProvinceSection-->
+                -->
+            <!--ProvinceSection-->
+            <!--
                 <Border Style="{StaticResource mainBorder}" Margin="0 0 30 30" Grid.Column="1">
                     <Grid>
-                        <!--Title-->
+                        -->
+            <!--Title-->
+            <!--
                         <TextBlock Text="Top Provinces" Style="{StaticResource titleText}"/>
 
-                        <!--FilterButton-->
+                        -->
+            <!--FilterButton-->
+            <!--
                         <Button Style="{StaticResource titleButton}" Margin="0 -3 0 0">
                             <Icon:PackIconMaterial Kind="Tune" Style="{StaticResource topMenuButtonIcon}"/>
                         </Button>
                         
-                        <!--ProvincesListView-->
+                        -->
+            <!--ProvincesListView-->
+            <!--
                         <ListView Margin="0 50 0 0" Background="Transparent" BorderThickness="0" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden">
                             <uc:Province Rank="1" ProvinceName="TP. Hồ Chí Minh" Population="1000" IsLevelUp="True"/>
                             <uc:Province Rank="2" ProvinceName="Bình Dương" Population="600" IsLevelUp="True"/>
@@ -244,7 +285,7 @@
                         </ListView>
                     </Grid>
                 </Border>
-            </Grid>            
+            </Grid>   -->
         </Grid>
     </Border>
 </Window>
