@@ -96,6 +96,15 @@
     <Compile Include="View\AllRoomView.xaml.cs">
       <DependentUpon>AllRoomView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\BlockBillView.xaml.cs">
+      <DependentUpon>BlockBillView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\BlockDwellerView.xaml.cs">
+      <DependentUpon>BlockDwellerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\BlockRequestView.xaml.cs">
+      <DependentUpon>BlockRequestView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\BlockView.xaml.cs">
       <DependentUpon>BlockView.xaml</DependentUpon>
     </Compile>
@@ -144,6 +153,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\AllRoomView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\BlockBillView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\BlockDwellerView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\BlockRequestView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

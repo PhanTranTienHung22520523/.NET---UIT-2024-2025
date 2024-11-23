@@ -82,3 +82,9 @@ D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\
 D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\View\AllRoomView.g.cs
 D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\UserControls\RoomCard.baml
 D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\View\AllRoomView.baml
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\View\BlockDwellerView.g.cs
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\View\BlockDwellerView.baml
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\View\BlockBillView.g.cs
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\View\BlockRequestView.g.cs
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\View\BlockBillView.baml
+D:\ooad\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\View\BlockRequestView.baml

@@ -50,7 +50,12 @@
             </StackPanel>
         </Grid>
         <Grid Grid.Row="1">
-            <Button Style="{StaticResource menuButton}"  HorizontalAlignment="Right"  Foreground="#9ea4ad" Background="#1e2e44" Content="Thêm tòa nhà" VerticalAlignment="Top" Width="85" Margin="0,7,7,0"></Button>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="{Binding BlockName}" Foreground="#dfe1e3" FontSize="16" Margin="10 0 0 0" FontWeight="SemiBold" VerticalAlignment="Center" />
+            <Button Grid.Column="1" Style="{StaticResource menuButton}"  HorizontalAlignment="Right"  Foreground="#9ea4ad" Background="#1e2e44" Content="Thêm tòa nhà" VerticalAlignment="Top" Width="85" Margin="0,7,7,0"></Button>
         </Grid>
         <Grid Grid.Row="2">
             <ListView Background="Transparent" ItemsSource="{Binding BlockList}" BorderThickness="0">
@@ -61,7 +66,7 @@
                 </ListView.ItemsPanel>
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <uc:BlockCard/>
+                        <uc:BlockCard MouseDoubleClick="BlockCard_MouseDoubleClick"/>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

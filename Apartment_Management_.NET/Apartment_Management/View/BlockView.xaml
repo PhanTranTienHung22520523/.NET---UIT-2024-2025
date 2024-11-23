@@ -28,10 +28,51 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <uc:BlockEntityCard Icon="Account" Title="CƯ DÂN" Number1="200" />
-            <uc:BlockEntityCard Grid.Column="1" Icon="Home" Title="CĂN HỘ"  Number1="200" Other="CÒN TRỐNG: " Number3="20" />
-            <uc:BlockEntityCard Grid.Column="2" Icon="InvoiceList" Title="HÓA ĐƠN" Number1="200" Space="/" Number2="500" Other="QUÁ HẠN: " Number3="20"/>
-            <uc:BlockEntityCard Grid.Column="3" Icon="CommentQuestionOutline" Title="YÊU CẦU" Number1="200" Space="/" Number2="500" />
+            <uc:BlockEntityCard Icon="Account" Title="CƯ DÂN" Number1="200" MouseLeftButtonDown="Dweller_MouseLeftButtonDown"/>
+            <uc:BlockEntityCard Grid.Column="1" Icon="Home" Title="CĂN HỘ"  Number1="200" Other="CÒN TRỐNG: " Number3="20" MouseLeftButtonDown="Apartment_MouseLeftButtonDown" />
+            <uc:BlockEntityCard Grid.Column="2" Icon="InvoiceList" Title="HÓA ĐƠN" Number1="200" Space="/" Number2="500" Other="QUÁ HẠN: " Number3="20"  MouseLeftButtonDown="Bill_MouseLeftButtonDown"/>
+            <uc:BlockEntityCard Grid.Column="3" Icon="CommentQuestionOutline" Title="YÊU CẦU" Number1="200" Space="/" Number2="500" MouseLeftButtonDown="Request_MouseLeftButtonDown" />
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="DANH SÁCH CĂN HỘ CÒN TRỐNG" Foreground="#dfe1e3" FontSize="16" Margin="10 0 0 0" FontWeight="SemiBold" />
+                <ScrollViewer Grid.Row="1"  VerticalScrollBarVisibility="Auto" Margin="10">
+                <DataGrid  AutoGenerateColumns="False" CanUserAddRows="False" SelectedItem="{Binding SelectedEmtyRoom}" CanUserResizeColumns="False"
+              ItemsSource="{Binding EmptyRoom}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Mã phòng" Binding="{Binding ID}" Width="*" IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Tầng" Binding="{Binding Floor}" Width="*" IsReadOnly="True" />
+                            <DataGridTextColumn Header="Số phòng" Binding="{Binding Number}" Width="*" IsReadOnly="True" />
+                        </DataGrid.Columns>
+                </DataGrid>
+            </ScrollViewer>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="DANH SÁCH YÊU CẦU CHƯA XỬ LÝ" Foreground="#dfe1e3" FontSize="16" Margin="10 0 0 0" FontWeight="SemiBold" />
+                <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Margin="10" >
+                <DataGrid  AutoGenerateColumns="False" CanUserAddRows="False" SelectedItem="{Binding SelectedUnsolveRequest}" CanUserResizeColumns="False" 
+                 ItemsSource="{Binding UnsolveRequest}" >
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Mã yêu cầu" Binding="{Binding ID}" Width="*" IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Căn hộ" Binding="{Binding Floor}" Width="*" IsReadOnly="True" />
+                        <DataGridTextColumn Header="Mô tả" Binding="{Binding Number}" Width="*" IsReadOnly="True" />
+                            <DataGridTemplateColumn Header="Thời gian tạo" Width="*" IsReadOnly="True"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </ScrollViewer>
+            </Grid>
         </Grid>
     </Grid>
 </UserControl>

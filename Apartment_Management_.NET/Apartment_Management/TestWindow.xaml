@@ -8,9 +8,7 @@
         mc:Ignorable="d"
         Title="TestWindow" Height="450" Width="800">
     <Grid>
-        <Grid>
-            <!-- Chèn UserControl AllBlockView vào -->
-            <usercontrol:AllRoomView />
-        </Grid>
+        <!-- Placeholder cho tất cả các UserControl động -->
+        <ContentControl x:Name="MainContent" />
     </Grid>
 </Window>

@@ -101,7 +101,7 @@
                 <StackPanel Margin="10 0">
                     <uc:InfoCard Number="30" Title="Average Orders a day"/>
                     <uc:InfoCard Number="15" Title="Average New Dwellers a day" />
-                    <uc:InfoCard Number="90" Title="Filled Room Rate"/>
+                    <uc:InfoCard Number="90" Title="Filled Room Rate" />
                 </StackPanel>
 
                 <!--InfoV=CardsRight-->

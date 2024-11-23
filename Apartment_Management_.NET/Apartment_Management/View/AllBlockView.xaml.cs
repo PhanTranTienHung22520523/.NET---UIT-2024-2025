@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Apartment_Management.UserControls;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -23,6 +24,7 @@ namespace Apartment_Management.View
     /// </summary>
     public partial class AllBlockView : UserControl
     {
+        public event EventHandler<Block> BlockSelected;
         public ObservableCollection<Block> BlockList { get; set; }
         public AllBlockView()
         {
@@ -34,6 +36,14 @@ namespace Apartment_Management.View
         };
 
             DataContext = this;
+        }
+
+        private void BlockCard_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            if (sender is FrameworkElement element && element.DataContext is Block block)
+            {
+                BlockSelected?.Invoke(this, block); // Gửi sự kiện Block được chọn
+            }
         }
     }
     public class Block

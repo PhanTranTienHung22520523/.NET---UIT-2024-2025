@@ -13,23 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Apartment_Management.UserControls
+namespace Apartment_Management.View
 {
     /// <summary>
-    /// Interaction logic for BlockCard.xaml
+    /// Interaction logic for BlockRequestView.xaml
     /// </summary>
-    public partial class BlockCard : UserControl
+    public partial class BlockRequestView : UserControl
     {
-        public event EventHandler BlockCardDoubleClick;
-        public BlockCard()
+        public BlockRequestView()
         {
             InitializeComponent();
-            this.MouseDoubleClick += BlockCard_MouseDoubleClick;
-        }
-        private void BlockCard_MouseDoubleClick(object sender, MouseButtonEventArgs e)
-        {
-            BlockCardDoubleClick?.Invoke(this, EventArgs.Empty);
         }
     }
-
 }

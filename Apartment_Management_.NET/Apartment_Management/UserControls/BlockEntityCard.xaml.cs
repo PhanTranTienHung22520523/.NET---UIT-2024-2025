@@ -83,7 +83,11 @@ namespace Apartment_Management.UserControls
 
         public static readonly DependencyProperty Number3Property =
         DependencyProperty.Register("Number3", typeof(int?), typeof(BlockEntityCard));
-       
+
+        private void UserControl_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 
 }

@@ -20,9 +20,31 @@ namespace Apartment_Management.View
     /// </summary>
     public partial class BlockView : UserControl
     {
+        public event EventHandler<string> CardSelected;
         public BlockView()
         {
             InitializeComponent();
         }
+
+        private void Dweller_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            CardSelected?.Invoke(this, "Resident"); // Phát sự kiện với loại card
+        }
+
+        private void Apartment_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            CardSelected?.Invoke(this, "Apartment");
+        }
+
+        private void Bill_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            CardSelected?.Invoke(this, "Invoice");
+        }
+
+        private void Request_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            CardSelected?.Invoke(this, "Request");
+        }
     }
 }
+
