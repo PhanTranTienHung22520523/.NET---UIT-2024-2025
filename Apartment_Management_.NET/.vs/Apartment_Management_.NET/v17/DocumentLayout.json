@@ -1,0 +1,143 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\HK1 - N\u0103m 3\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|d:\\hk1 - n\u0103m 3\\.net---uit-2024-2025\\apartment_management_.net\\apartment_management\\viewmodel\\receipt_view_model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\viewmodel\\receipt_view_model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|d:\\hk1 - n\u0103m 3\\.net---uit-2024-2025\\apartment_management_.net\\apartment_management\\view\\receiptmanagement.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\view\\receiptmanagement.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|d:\\hk1 - n\u0103m 3\\.net---uit-2024-2025\\apartment_management_.net\\apartment_management\\model\\receipt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\model\\receipt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|d:\\hk1 - n\u0103m 3\\.net---uit-2024-2025\\apartment_management_.net\\apartment_management\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|d:\\hk1 - n\u0103m 3\\.net---uit-2024-2025\\apartment_management_.net\\apartment_management\\firebaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\firebaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|D:\\HK1 - N\u0103m 3\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\apartment_management\\view\\receiptmanagement.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1B9B4F98-00EF-45FA-ACCC-9514698E9CDD}|Apartment_Management\\Apartment_Management.csproj|solutionrelative:apartment_management\\view\\receiptmanagement.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 1475,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\HK1 - N\u0103m 3\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\App.xaml.cs",
+              "RelativeDocumentMoniker": "Apartment_Management\\App.xaml.cs",
+              "ToolTip": "D:\\HK1 - N\u0103m 3\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\App.xaml.cs",
+              "RelativeToolTip": "Apartment_Management\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T13:27:10.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FirebaseConfig.cs",
+              "DocumentMoniker": "D:\\HK1 - N\u0103m 3\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\FirebaseConfig.cs",
+              "RelativeDocumentMoniker": "Apartment_Management\\FirebaseConfig.cs",
+              "ToolTip": "D:\\HK1 - N\u0103m 3\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\FirebaseConfig.cs",
+              "RelativeToolTip": "Apartment_Management\\FirebaseConfig.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAcwB8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T13:15:16.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReceiptManagement.xaml.cs",
+              "DocumentMoniker": "D:\\HK1 - N\u0103m 3\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\View\\ReceiptManagement.xaml.cs",
+              "RelativeDocumentMoniker": "Apartment_Management\\View\\ReceiptManagement.xaml.cs",
+              "ToolTip": "D:\\HK1 - N\u0103m 3\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\View\\ReceiptManagement.xaml.cs",
+              "RelativeToolTip": "Apartment_Management\\View\\ReceiptManagement.xaml.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAABYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T13:00:21.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Receipt_View_Model.cs",
+              "DocumentMoniker": "D:\\HK1 - N\u0103m 3\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\ViewModel\\Receipt_View_Model.cs",
+              "RelativeDocumentMoniker": "Apartment_Management\\ViewModel\\Receipt_View_Model.cs",
+              "ToolTip": "D:\\HK1 - N\u0103m 3\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\ViewModel\\Receipt_View_Model.cs",
+              "RelativeToolTip": "Apartment_Management\\ViewModel\\Receipt_View_Model.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T12:49:54.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Receipt.cs",
+              "DocumentMoniker": "D:\\HK1 - N\u0103m 3\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\Model\\Receipt.cs",
+              "RelativeDocumentMoniker": "Apartment_Management\\Model\\Receipt.cs",
+              "ToolTip": "D:\\HK1 - N\u0103m 3\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\Model\\Receipt.cs",
+              "RelativeToolTip": "Apartment_Management\\Model\\Receipt.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAwwAoAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T12:49:21.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ReceiptManagement.xaml",
+              "DocumentMoniker": "D:\\HK1 - N\u0103m 3\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\View\\ReceiptManagement.xaml",
+              "RelativeDocumentMoniker": "Apartment_Management\\View\\ReceiptManagement.xaml",
+              "ToolTip": "D:\\HK1 - N\u0103m 3\\.NET---UIT-2024-2025\\Apartment_Management_.NET\\Apartment_Management\\View\\ReceiptManagement.xaml",
+              "RelativeToolTip": "Apartment_Management\\View\\ReceiptManagement.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-29T01:54:04.886Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 220,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

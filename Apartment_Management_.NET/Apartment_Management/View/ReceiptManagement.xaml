@@ -1,0 +1,163 @@
+﻿<UserControl x:Class="Apartment_Management.View.ReceiptManagement"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Apartment_Management.View"
+             xmlns:uc="clr-namespace:Apartment_Management.UserControls"
+             xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="boolToVis"/>
+        <!-- DataGrid Header Style -->
+        <Style x:Key="dataGridHeaderStyle" TargetType="DataGridColumnHeader">
+            <Setter Property="Background" Value="#1e2e44"/>
+            <Setter Property="Foreground" Value="#9ea4ad"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="BorderBrush" Value="#243347"/>
+            <Setter Property="BorderThickness" Value="0,0,0,1"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        </Style>
+
+        <!-- DataGrid Column Header Style -->
+        <Style x:Key="dataGridColumnHeaderStyle" TargetType="DataGridColumnHeader">
+            <Setter Property="Background" Value="#1e2e44"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="BorderBrush" Value="#243347"/>
+            <Setter Property="BorderThickness" Value="0,0,0,1"/>
+        </Style>
+        <Style TargetType="TabControl">
+            <Setter Property="Background" Value="#1e2e44"/>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid Background="#151f2d">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--Top Menu-->
+        <Grid Grid.Column="1" Margin="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+
+            <!--Search Textbox-->
+            <TextBlock Margin="40 0 15 0" VerticalAlignment="Center" Foreground="#9ea4ad" Panel.ZIndex="1"
+        IsHitTestVisible="False" Text="Search here ... "
+        Visibility="{Binding ElementName=txtbox_find, Path=Text.IsEmpty, Converter={StaticResource boolToVis}}"/>
+            <TextBox Style="{StaticResource searchTextBox}" x:Name="txtbox_find" KeyDown="txtbox_find_KeyDown"/>
+            <Icon:PackIconMaterial Kind="Magnify" Width="15" Height="15" Foreground="#9ea4ad" Margin="15 0 0 0" 
+                    HorizontalAlignment="Left" 
+                    VerticalAlignment="Center"/>
+
+            <!--Buttons-->
+            <StackPanel Orientation="Horizontal" Grid.Column="1" Margin="20 0 0 0">
+                <Button Style="{StaticResource topMenuButton}" x:Name="btn_noti"  Cursor="Hand">
+                    <Icon:PackIconMaterial Kind="Bell" Style="{StaticResource topMenuButtonIcon}" />
+                </Button>
+
+
+                <Button Style="{StaticResource topMenuButton}" Background="#1e2e44" x:Name="btn_acc" Click="btn_acc_Click" Cursor="Hand">
+                    <Icon:PackIconMaterial Kind="Account" Style="{StaticResource topMenuButtonIcon}" />
+                </Button>
+            </StackPanel>
+        </Grid>
+
+        <!--TabControl for Unpaid and Paid-->
+        <TabControl Grid.Row="1" Margin="20 20 20 20" Background="#1e2e44">
+
+            <TabItem Header="Unpaid" Cursor="Hand">
+                <TabItem.Style>
+                    <Style TargetType="TabItem">
+                        <Setter Property="Background" Value="#243347"/>
+                        <Setter Property="Foreground" Value="White"/>
+                        <Style.Triggers>
+                            <!-- Khi TabItem được chọn -->
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter Property="Background" Value="White"/>
+                                <Setter Property="Foreground" Value="#243347"/>
+                            </Trigger>
+                            <!-- Khi TabItem k được chọn -->
+                            <Trigger Property="IsSelected" Value="False">
+                                <Setter Property="Background" Value="#243347"/>
+                                <Setter Property="Foreground" Value="White"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </TabItem.Style>
+                <DataGrid AutoGenerateColumns="False" CanUserAddRows="False" Background="#151f2d" Foreground="White"
+          GridLinesVisibility="All" BorderThickness="1" BorderBrush="#243347"
+          RowBackground="#1e2e44" AlternatingRowBackground="#243347"
+          HorizontalGridLinesBrush="White" VerticalGridLinesBrush="White"
+          ColumnHeaderStyle="{StaticResource dataGridColumnHeaderStyle}" 
+          HeadersVisibility="Column">
+
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Receipt ID" Binding="{Binding ReceiptID}" Width="*" 
+                            HeaderStyle="{StaticResource dataGridColumnHeaderStyle}" 
+                            SortMemberPath="ReceiptID"  />
+                        <DataGridTextColumn Header="Room" Binding="{Binding RoomID}" Width="*" 
+                            HeaderStyle="{StaticResource dataGridColumnHeaderStyle}" 
+                            SortMemberPath="Room"/>
+                        <DataGridTextColumn Header="Type" Binding="{Binding Type}" Width="*" 
+                            HeaderStyle="{StaticResource dataGridColumnHeaderStyle}" 
+                            SortMemberPath="Type"  />
+                        <DataGridTextColumn Header="Date Created" Binding="{Binding Create_At}" Width="*" 
+                            HeaderStyle="{StaticResource dataGridColumnHeaderStyle}" 
+                            SortMemberPath="DateCreated" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+            <TabItem Header="Paid" Cursor="Hand">
+                <TabItem.Style>
+                    <Style TargetType="TabItem">
+                        <Setter Property="Background" Value="#243347"/>
+                        <Setter Property="Foreground" Value="White"/>
+                        <Style.Triggers>
+                            <!-- Khi TabItem được chọn -->
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter Property="Background" Value="White"/>
+                                <Setter Property="Foreground" Value="#243347"/>
+                            </Trigger>
+                            <!-- Khi TabItem k được chọn -->
+                            <Trigger Property="IsSelected" Value="False">
+                                <Setter Property="Background" Value="#243347"/>
+                                <Setter Property="Foreground" Value="White"/>
+
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </TabItem.Style>
+                <DataGrid AutoGenerateColumns="False" CanUserAddRows="False" Background="#151f2d" Foreground="White"
+                            GridLinesVisibility="All" BorderThickness="1" BorderBrush="#243347"
+                            RowBackground="#1e2e44" AlternatingRowBackground="#243347"
+                            HorizontalGridLinesBrush="White" VerticalGridLinesBrush="White"
+                            ColumnHeaderStyle="{StaticResource dataGridColumnHeaderStyle}" 
+                            HeadersVisibility="Column"
+                          ItemsSource="{Binding Receipts}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Receipt ID" Binding="{Binding ReceiptID}" Width="*" 
+                                            HeaderStyle="{StaticResource dataGridColumnHeaderStyle}" 
+                                            SortMemberPath="ReceiptID"  />
+                        <DataGridTextColumn Header="Room" Binding="{Binding Room}" Width="*" 
+                                            HeaderStyle="{StaticResource dataGridColumnHeaderStyle}" 
+                                            SortMemberPath="Room"/>
+                        <DataGridTextColumn Header="Type" Binding="{Binding Type}" Width="*" 
+                                            HeaderStyle="{StaticResource dataGridColumnHeaderStyle}" 
+                                            SortMemberPath="Type"  />
+                        <DataGridTextColumn Header="Date Created" Binding="{Binding DateCreated}" Width="*" 
+                                            HeaderStyle="{StaticResource dataGridColumnHeaderStyle}" 
+                                            SortMemberPath="DateCreated" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</UserControl>
