@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:viewmodel="clr-namespace:Apartment_Management.ViewModel"
+                    xmlns:view="clr-namespace:Apartment_Management.View">
+    <viewmodel:MainWindow_View_Model x:Key="MainWindowVM"/>
+    <viewmodel:Block_Management_View_Model x:Key="BlockManagementVM"/>
+    <viewmodel:Home_View_Model x:Key="HomeVM"/>
+    <viewmodel:Block_View_Model x:Key="BlockVM"/>
+    <viewmodel:Block_Dweller_View_Model x:Key="BlockDwellerVM"/>
+    <viewmodel:Add_Dweller_View_Model x:Key="AddDwellerVM"/>
+    <viewmodel:Dweller_View_Model x:Key="DwellerManagementVM"/>
+</ResourceDictionary>

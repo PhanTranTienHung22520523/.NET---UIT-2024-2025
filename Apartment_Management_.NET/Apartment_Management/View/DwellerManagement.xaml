@@ -3,10 +3,79 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
+             xmlns:uc="clr-namespace:Apartment_Management.UserControls"
              xmlns:local="clr-namespace:Apartment_Management.View"
+             xmlns:vm="clr-namespace:Apartment_Management.ViewModel"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="800"
+             Background="#151f2d">
+    <UserControl.DataContext>
+        <vm:Dweller_View_Model/>
+    </UserControl.DataContext>
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="boolToVis"/>
+    </UserControl.Resources>
     <Grid>
-            
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <!--Searchbar-->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+
+            <!--Search Textbox-->
+            <TextBlock Margin="40 0 15 0" VerticalAlignment="Center" Foreground="#9ea4ad" Panel.ZIndex="1"
+                IsHitTestVisible="False" Text="Search here ... "
+                Visibility="{Binding ElementName=textBox, Path=Text.IsEmpty, Converter={StaticResource boolToVis}}"/>
+            <TextBox x:Name="textBox" Style="{StaticResource searchTextBox}"/>
+            <Icon:PackIconMaterial Kind="Magnify" Width="15" Height="15" Foreground="#9ea4ad" Margin="15 0 0 0" 
+                            HorizontalAlignment="Left" 
+                            VerticalAlignment="Center"/>
+
+            <!--Buttons-->
+            <StackPanel Orientation="Horizontal" Grid.Column="1" Margin="20 0 0 0">
+                <Button Style="{StaticResource topMenuButton}">
+                    <Icon:PackIconMaterial Kind="Bell" Style="{StaticResource topMenuButtonIcon}" />
+                </Button>
+
+                <Button Style="{StaticResource topMenuButton}">
+                    <Icon:PackIconMaterial Kind="Bookmark" Style="{StaticResource topMenuButtonIcon}" />
+                </Button>
+
+                <Button Style="{StaticResource topMenuButton}" Background="#1e2e44">
+                    <Icon:PackIconMaterial Kind="Account" Style="{StaticResource topMenuButtonIcon}" />
+                </Button>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Button Style="{StaticResource menuButton}"  HorizontalAlignment="Right"  Foreground="#9ea4ad" Background="#1e2e44" Content="Thêm cư dân" VerticalAlignment="Top" Width="85" Margin="0,7,7,0" Command="{Binding AddDwellerCommand}"></Button>
+        </Grid>
+        <Grid Grid.Row="2">
+            <ScrollViewer  VerticalScrollBarVisibility="Auto" Margin="10">
+                <DataGrid  AutoGenerateColumns="False" CanUserAddRows="False" SelectedItem="{Binding SelectedDweller}" CanUserResizeColumns="False" Background="Transparent" Foreground="White" 
+                 ItemsSource="{Binding Dweller}">
+                    <DataGrid.Resources>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="Background" Value="#1e2e44" />
+                            <Setter Property="Foreground" Value="#9ea4ad" />
+                            <Setter Property="FontWeight" Value="Bold" />
+                        </Style>
+                    </DataGrid.Resources>
+                    <DataGrid.Columns  >
+                        <DataGridTextColumn Header="Cư dân" Binding="{Binding Name}" Width="*" IsReadOnly="True"  />
+                        <DataGridTextColumn Header="Tòa" Binding="{Binding Block}" Width="*" IsReadOnly="True"  />
+                        <DataGridTextColumn Header="Số phòng" Binding="{Binding Number}" Width="*" IsReadOnly="True" />
+                        <DataGridTextColumn Header="Số điện thoại" Binding="{Binding Phone}" Width="*" IsReadOnly="True" />
+                        <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="*" IsReadOnly="True" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </ScrollViewer>
+        </Grid>
     </Grid>
 </UserControl>

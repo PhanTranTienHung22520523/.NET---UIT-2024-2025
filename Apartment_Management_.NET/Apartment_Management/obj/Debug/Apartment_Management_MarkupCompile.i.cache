@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\
+D:\net\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\
 Apartment_Management
 none
 false
 DEBUG;TRACE
-D:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\App.xaml
-142108118561
+D:\net\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\App.xaml
+24147916107
 2-532946523
-42-391368395
-45-630698175
-MainWindow.xaml;UserControls\InfoCard.xaml;UserControls\menubutton.xaml;UserControls\Province.xaml;View\Account.xaml;View\AddContract.xaml;View\ContractManagement.xaml;View\DwellerManagement.xaml;View\EmployeeManagement.xaml;View\FinanceManagement.xaml;View\Home.xaml;View\OrderManagement.xaml;View\ReceiptManagement.xaml;View\RoomManagement.xaml;
+58-316164224
+461715307377
+MainWindow.xaml;ResourceXAML\ResourceDictionary.xaml;UserControls\BlockCard.xaml;UserControls\BlockEntityCard.xaml;UserControls\InfoCard.xaml;UserControls\menubutton.xaml;UserControls\Province.xaml;UserControls\RoomCard.xaml;View\Account.xaml;View\AddContract.xaml;View\AddDweller.xaml;View\BlockBillManagement.xaml;View\BlockDwellerManagement.xaml;View\BlockManagement.xaml;View\BlockRequestManagement.xaml;View\BlockView.xaml;View\ContractManagement.xaml;View\DwellerManagement.xaml;View\EmployeeManagement.xaml;View\FinanceManagement.xaml;View\Home.xaml;View\OrderManagement.xaml;View\ReceiptManagement.xaml;View\RoomManagement.xaml;
 
 False
 

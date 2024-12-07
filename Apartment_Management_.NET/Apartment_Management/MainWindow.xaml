@@ -1,4 +1,4 @@
-﻿<Window x:Class="Apartment_Management.MainWindow"
+﻿<Window x:Class="Apartment_Management.View.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -6,17 +6,22 @@
         xmlns:uc="clr-namespace:Apartment_Management.UserControls"
         xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
         xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        xmlns:vm="clr-namespace:Apartment_Management.ViewModel"
         Height="760" Width="1280"
         ResizeMode="NoResize"
         AllowsTransparency="True"
         WindowStyle="None"
         WindowStartupLocation="CenterScreen"
-        Background="Transparent">
-
+        Background="Transparent"
+        
+        >
+    <Window.DataContext>
+        <vm:MainWindow_View_Model/>
+    </Window.DataContext>
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="boolToVis"/>
     </Window.Resources>
-    <Border CornerRadius="25" Background="#151f2d" MouseDown="Border_MouseDown">
+    <Border CornerRadius="25" Background="#151f2d" >
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="100"/>
@@ -44,20 +49,20 @@
                         </StackPanel>
 
                         <!--MenuButton-->
-                        <uc:menubutton Icon="HomeVariant"  ToolTip="Home"  Tag="Home" x:Name="Home_View" Click="Home_View_Click" Cursor="Hand"/>
-                        <uc:menubutton Icon="Greenhouse" ToolTip="Room Management"  Tag="RoomManagement" x:Name="Room_Managemen" Click="Room_Managemen_Click" Cursor="Hand"/>
-                        <uc:menubutton Icon="Human" ToolTip="Dweller Management" Tag="DwellerManagement" x:Name="Dweller_Managemen" Click="Dweller_Managemen_Click" Cursor="Hand"/>
-                        <uc:menubutton Icon="HumanEdit" ToolTip="Employee Management"  Tag="EmployeeManagement" x:Name="Employee_Management" Click="Employee_Management_Click" Cursor="Hand"/>
-                        <uc:menubutton Icon="OrderAlphabeticalAscending" ToolTip="Order Management"  Tag="OrderManagement" x:Name="Order_Management" Click="Order_Management_Click" Cursor="Hand"/>
-                        <uc:menubutton Icon="Receipt" ToolTip="Receipt Management" Tag="ReceiptManagement" x:Name="Receipt_Management" Click="Receipt_Management_Click" Cursor="Hand"/>
-                        <uc:menubutton Icon="Passport" ToolTip="Contract Management"  Tag="ContractManagement" x:Name="Contract_Management" Click="Contract_Management_Click" Cursor="Hand"/>
-                        <uc:menubutton Icon="Cash" ToolTip="Finance Management"  Tag="FinanceManagement" x:Name="Finance_Management" Click="Finance_Management_Click" Cursor="Hand"/>
+                        <uc:menubutton Icon="HomeVariant"  ToolTip="Home"  Tag="Home" x:Name="Home_View"  Command="{Binding HomeCommand}"  Cursor="Hand"/>
+                        <uc:menubutton Icon="Greenhouse" ToolTip="Block Management"  Tag="BlockManagement" x:Name="Room_Managemen" Command="{Binding BlockCommand}" Cursor="Hand"/>
+                        <uc:menubutton Icon="Human" ToolTip="Dweller Management" Tag="DwellerManagement" x:Name="Dweller_Managemen" Command="{Binding DwellerCommand}"   Cursor="Hand"/>
+                        <uc:menubutton Icon="HumanEdit" ToolTip="Employee Management"  Tag="EmployeeManagement" x:Name="Employee_Management" Command="{Binding EmployeeCommand}" Cursor="Hand"/>
+                        <uc:menubutton Icon="OrderAlphabeticalAscending" ToolTip="Order Management"  Tag="OrderManagement" x:Name="Order_Management" Command="{Binding OrderCommand}"  Cursor="Hand"/>
+                        <uc:menubutton Icon="Receipt" ToolTip="Receipt Management" Tag="ReceiptManagement" x:Name="Receipt_Management" Command="{Binding ReceiptCommand}" Cursor="Hand"/>
+                        <uc:menubutton Icon="Passport" ToolTip="Contract Management"  Tag="ContractManagement" x:Name="Contract_Management" Command="{Binding ContractCommand}"  Cursor="Hand"/>
+                        <uc:menubutton Icon="Cash" ToolTip="Finance Management"  Tag="FinanceManagement" x:Name="Finance_Management" Command="{Binding FinanceCommand}" Cursor="Hand"/>
                     </StackPanel>
-                    <uc:menubutton Icon="Power" VerticalAlignment="Top" Margin="0,650,0,0" ToolTip="Power Off" Click="menubutton_Click_1" Cursor="Hand"/>
+                    <uc:menubutton Icon="Power" VerticalAlignment="Top" Margin="0,650,0,0" ToolTip="Power Off" Command="{Binding ShutdownCommand}" Cursor="Hand"/>
                 </Grid>
             </Border>
 
-            <ContentControl x:Name="MainContent" Grid.Column="1" Margin="20" />
+            <ContentControl x:Name="MainContent" Content="{Binding CurrentView}" Grid.Column="1" Margin="20" />
 
             <!--Top Menu-->
             <!--

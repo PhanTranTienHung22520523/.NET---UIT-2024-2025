@@ -15,7 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Apartment_Management
+namespace Apartment_Management.View
 {
 	/// <summary>
 	/// Interaction logic for MainWindow.xaml
@@ -25,15 +25,15 @@ namespace Apartment_Management
 		public MainWindow()
 		{
 			InitializeComponent();
-			MainContent.Content = new View.Home();
-			Home_View.IsActive = true;
-			Room_Managemen.IsActive = false;
-			Dweller_Managemen.IsActive = false;
-			Employee_Management.IsActive = false;
-			Order_Management.IsActive = false;
-			Receipt_Management.IsActive = false;
-			Contract_Management.IsActive = false;
-			Finance_Management.IsActive = false;
+			//MainContent.Content = new View.Home();
+			//Home_View.IsActive = true;
+			//Room_Managemen.IsActive = false;
+			//Dweller_Managemen.IsActive = false;
+			//Employee_Management.IsActive = false;
+			//Order_Management.IsActive = false;
+			//Receipt_Management.IsActive = false;
+			//Contract_Management.IsActive = false;
+			//Finance_Management.IsActive = false;
 		}
 
 		public void NavigateToAccount()
@@ -41,134 +41,134 @@ namespace Apartment_Management
 			MainContent.Content = new View.Account();
 		}
 
-		private void Border_MouseDown(object sender, MouseButtonEventArgs e)
-		{
-			if (e.ChangedButton == MouseButton.Left)
-			{
-				this.DragMove();
-			}
-		}
+		//private void Border_MouseDown(object sender, MouseButtonEventArgs e)
+		//{
+		//	if (e.ChangedButton == MouseButton.Left)
+		//	{
+		//		this.DragMove();
+		//	}
+		//}
 
-		private void Home_View_Click(object sender, RoutedEventArgs e)
-		{
-			MainContent.Content = new View.Home();
-			Home_View.IsActive = true;
-			Room_Managemen.IsActive = false;
-			Dweller_Managemen.IsActive = false;
-			Employee_Management.IsActive = false;
-			Order_Management.IsActive = false;
-			Receipt_Management.IsActive = false;
-			Contract_Management.IsActive = false;
-			Finance_Management.IsActive = false;
+		//private void Home_View_Click(object sender, RoutedEventArgs e)
+		//{
+		//	MainContent.Content = new View.Home();
+		//	Home_View.IsActive = true;
+		//	Room_Managemen.IsActive = false;
+		//	Dweller_Managemen.IsActive = false;
+		//	Employee_Management.IsActive = false;
+		//	Order_Management.IsActive = false;
+		//	Receipt_Management.IsActive = false;
+		//	Contract_Management.IsActive = false;
+		//	Finance_Management.IsActive = false;
 
-		}
+		//}
 
-		private void Room_Managemen_Click(object sender, RoutedEventArgs e)
-		{
-			MainContent.Content = new View.RoomManagement();
-			Home_View.IsActive = false;
-			Room_Managemen.IsActive = true;
-			Dweller_Managemen.IsActive = false;
-			Employee_Management.IsActive = false;
-			Order_Management.IsActive = false;
-			Receipt_Management.IsActive = false;
-			Contract_Management.IsActive = false;
-			Finance_Management.IsActive = false;
-		}
+		//private void Room_Managemen_Click(object sender, RoutedEventArgs e)
+		//{
+		//	MainContent.Content = new View.RoomManagement();
+		//	Home_View.IsActive = false;
+		//	Room_Managemen.IsActive = true;
+		//	Dweller_Managemen.IsActive = false;
+		//	Employee_Management.IsActive = false;
+		//	Order_Management.IsActive = false;
+		//	Receipt_Management.IsActive = false;
+		//	Contract_Management.IsActive = false;
+		//	Finance_Management.IsActive = false;
+		//}
 
-		private void Dweller_Managemen_Click(object sender, RoutedEventArgs e)
-		{
-			MainContent.Content = new View.DwellerManagement();
-			Home_View.IsActive = false;
-			Room_Managemen.IsActive = false;
-			Dweller_Managemen.IsActive = true;
-			Employee_Management.IsActive = false;
-			Order_Management.IsActive = false;
-			Receipt_Management.IsActive = false;
-			Contract_Management.IsActive = false;
-			Finance_Management.IsActive = false;
-		}
+		//private void Dweller_Managemen_Click(object sender, RoutedEventArgs e)
+		//{
+		//	MainContent.Content = new View.DwellerManagement();
+		//	Home_View.IsActive = false;
+		//	Room_Managemen.IsActive = false;
+		//	Dweller_Managemen.IsActive = true;
+		//	Employee_Management.IsActive = false;
+		//	Order_Management.IsActive = false;
+		//	Receipt_Management.IsActive = false;
+		//	Contract_Management.IsActive = false;
+		//	Finance_Management.IsActive = false;
+		//}
 
-		private void Employee_Management_Click(object sender, RoutedEventArgs e)
-		{
-			MainContent.Content = new View.EmployeeManagement();
-			Home_View.IsActive = false;
-			Room_Managemen.IsActive = false;
-			Dweller_Managemen.IsActive = false;
-			Employee_Management.IsActive = true;
-			Order_Management.IsActive = false;
-			Receipt_Management.IsActive = false;
-			Contract_Management.IsActive = false;
-			Finance_Management.IsActive = false;
-		}
+		//private void Employee_Management_Click(object sender, RoutedEventArgs e)
+		//{
+		//	MainContent.Content = new View.EmployeeManagement();
+		//	Home_View.IsActive = false;
+		//	Room_Managemen.IsActive = false;
+		//	Dweller_Managemen.IsActive = false;
+		//	Employee_Management.IsActive = true;
+		//	Order_Management.IsActive = false;
+		//	Receipt_Management.IsActive = false;
+		//	Contract_Management.IsActive = false;
+		//	Finance_Management.IsActive = false;
+		//}
 
-		private void Order_Management_Click(object sender, RoutedEventArgs e)
-		{
-			MainContent.Content = new View.OrderManagement();
-			Home_View.IsActive = false;
-			Room_Managemen.IsActive = false;
-			Dweller_Managemen.IsActive = false;
-			Employee_Management.IsActive = false;
-			Order_Management.IsActive = true;
-			Receipt_Management.IsActive = false;
-			Contract_Management.IsActive = false;
-			Finance_Management.IsActive = false;
-		}
+		//private void Order_Management_Click(object sender, RoutedEventArgs e)
+		//{
+		//	MainContent.Content = new View.OrderManagement();
+		//	Home_View.IsActive = false;
+		//	Room_Managemen.IsActive = false;
+		//	Dweller_Managemen.IsActive = false;
+		//	Employee_Management.IsActive = false;
+		//	Order_Management.IsActive = true;
+		//	Receipt_Management.IsActive = false;
+		//	Contract_Management.IsActive = false;
+		//	Finance_Management.IsActive = false;
+		//}
 
-		private void Receipt_Management_Click(object sender, RoutedEventArgs e)
-		{
-			MainContent.Content = new View.ReceiptManagement();
-			Home_View.IsActive = false;
-			Room_Managemen.IsActive = false;
-			Dweller_Managemen.IsActive = false;
-			Employee_Management.IsActive = false;
-			Order_Management.IsActive = false;
-			Receipt_Management.IsActive = true;
-			Contract_Management.IsActive = false;
-			Finance_Management.IsActive = false;
-		}
+		//private void Receipt_Management_Click(object sender, RoutedEventArgs e)
+		//{
+		//	MainContent.Content = new View.ReceiptManagement();
+		//	Home_View.IsActive = false;
+		//	Room_Managemen.IsActive = false;
+		//	Dweller_Managemen.IsActive = false;
+		//	Employee_Management.IsActive = false;
+		//	Order_Management.IsActive = false;
+		//	Receipt_Management.IsActive = true;
+		//	Contract_Management.IsActive = false;
+		//	Finance_Management.IsActive = false;
+		//}
 
-		private void Contract_Management_Click(object sender, RoutedEventArgs e)
-		{
-			MainContent.Content = new View.ContractManagement();
-			Home_View.IsActive = false;
-			Room_Managemen.IsActive = false;
-			Dweller_Managemen.IsActive = false;
-			Employee_Management.IsActive = false;
-			Order_Management.IsActive = false;
-			Receipt_Management.IsActive = false;
-			Contract_Management.IsActive = true;
-			Finance_Management.IsActive = false;
-		}
+		//private void Contract_Management_Click(object sender, RoutedEventArgs e)
+		//{
+		//	MainContent.Content = new View.ContractManagement();
+		//	Home_View.IsActive = false;
+		//	Room_Managemen.IsActive = false;
+		//	Dweller_Managemen.IsActive = false;
+		//	Employee_Management.IsActive = false;
+		//	Order_Management.IsActive = false;
+		//	Receipt_Management.IsActive = false;
+		//	Contract_Management.IsActive = true;
+		//	Finance_Management.IsActive = false;
+		//}
 
-		private void Finance_Management_Click(object sender, RoutedEventArgs e)
-		{
-			MainContent.Content = new View.FinanceManagement();
-			Home_View.IsActive = false;
-			Room_Managemen.IsActive = false;
-			Dweller_Managemen.IsActive = false;
-			Employee_Management.IsActive = false;
-			Order_Management.IsActive = false;
-			Receipt_Management.IsActive = false;
-			Contract_Management.IsActive = false;
-			Finance_Management.IsActive = true;
-		}
+		//private void Finance_Management_Click(object sender, RoutedEventArgs e)
+		//{
+		//	MainContent.Content = new View.FinanceManagement();
+		//	Home_View.IsActive = false;
+		//	Room_Managemen.IsActive = false;
+		//	Dweller_Managemen.IsActive = false;
+		//	Employee_Management.IsActive = false;
+		//	Order_Management.IsActive = false;
+		//	Receipt_Management.IsActive = false;
+		//	Contract_Management.IsActive = false;
+		//	Finance_Management.IsActive = true;
+		//}
 
-		private void menubutton_Click_1(object sender, RoutedEventArgs e)
-		{
-			MessageBoxResult result = MessageBox.Show(
-	   "Do you want to quit the application?",
-	   "Confirm to quit",
-	   MessageBoxButton.YesNo,
-	   MessageBoxImage.Question
-   );
+		//private void menubutton_Click_1(object sender, RoutedEventArgs e)
+		//{
+		//	MessageBoxResult result = MessageBox.Show(
+	 //  "Do you want to quit the application?",
+	 //  "Confirm to quit",
+	 //  MessageBoxButton.YesNo,
+	 //  MessageBoxImage.Question
+  // );
 
-			// Nếu chọn "Yes", đóng ứng dụng
-			if (result == MessageBoxResult.Yes)
-			{
-				Application.Current.Shutdown();
-			}
-		}
+		//	// Nếu chọn "Yes", đóng ứng dụng
+		//	if (result == MessageBoxResult.Yes)
+		//	{
+		//		Application.Current.Shutdown();
+		//	}
+		//}
 
 		//private void menubutton_Click(object sender, RoutedEventArgs e)
 		//{

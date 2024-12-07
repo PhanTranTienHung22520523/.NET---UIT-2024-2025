@@ -77,6 +77,9 @@
     <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.9.0.0\lib\net462\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Xaml.Behaviors, Version=1.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Xaml.Behaviors.Wpf.1.1.135\lib\net462\Microsoft.Xaml.Behaviors.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -136,6 +139,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Command\RelayCommand.cs" />
     <Compile Include="FirebaseConfig.cs" />
     <Compile Include="Helper\RelayCommand.cs" />
     <Compile Include="Model\Block.cs" />
@@ -150,6 +154,12 @@
     <Compile Include="Model\TypeRoom.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Service\FirebaseService.cs" />
+    <Compile Include="UserControls\BlockCard.xaml.cs">
+      <DependentUpon>BlockCard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\BlockEntityCard.xaml.cs">
+      <DependentUpon>BlockEntityCard.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\InfoCard.xaml.cs">
       <DependentUpon>InfoCard.xaml</DependentUpon>
     </Compile>
@@ -159,12 +169,21 @@
     <Compile Include="UserControls\Province.xaml.cs">
       <DependentUpon>Province.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\RoomCard.xaml.cs">
+      <DependentUpon>RoomCard.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModel\Account_View_Model.cs" />
+    <Compile Include="ViewModel\Add_Dweller_View_Model.cs" />
+    <Compile Include="ViewModel\Base_View_Model.cs" />
+    <Compile Include="ViewModel\Block_Dweller_View_Model.cs" />
+    <Compile Include="ViewModel\Block_Management_View_Model.cs" />
+    <Compile Include="ViewModel\Block_View_Model.cs" />
     <Compile Include="ViewModel\Contract_View_Model.cs" />
     <Compile Include="ViewModel\Dweller_View_Model.cs" />
     <Compile Include="ViewModel\Employee_View_Model.cs" />
     <Compile Include="ViewModel\Finance_View_Model.cs" />
     <Compile Include="ViewModel\Home_View_Model.cs" />
+    <Compile Include="ViewModel\MainWindow_View_Model.cs" />
     <Compile Include="ViewModel\Order_View_Model.cs" />
     <Compile Include="ViewModel\Receipt_View_Model.cs" />
     <Compile Include="ViewModel\Room_View_Model.cs" />
@@ -173,6 +192,24 @@
     </Compile>
     <Compile Include="View\AddContract.xaml.cs">
       <DependentUpon>AddContract.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\AddDweller.xaml.cs">
+      <DependentUpon>AddDweller.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\BlockBillManagement.xaml.cs">
+      <DependentUpon>BlockBillManagement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\BlockDwellerManagement.xaml.cs">
+      <DependentUpon>BlockDwellerManagement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\BlockManagement.xaml.cs">
+      <DependentUpon>BlockManagement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\BlockRequestManagement.xaml.cs">
+      <DependentUpon>BlockRequestManagement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\BlockView.xaml.cs">
+      <DependentUpon>BlockView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\ContractManagement.xaml.cs">
       <DependentUpon>ContractManagement.xaml</DependentUpon>
@@ -210,6 +247,18 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="ResourceXAML\ResourceDictionary.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\BlockCard.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\BlockEntityCard.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="UserControls\InfoCard.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -222,6 +271,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UserControls\RoomCard.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="View\Account.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -229,6 +282,30 @@
     <Page Include="View\AddContract.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AddDweller.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\BlockBillManagement.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\BlockDwellerManagement.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\BlockManagement.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\BlockRequestManagement.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\BlockView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="View\ContractManagement.xaml">
       <SubType>Designer</SubType>

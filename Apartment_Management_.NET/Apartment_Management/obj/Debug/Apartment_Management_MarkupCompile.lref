@@ -1,17 +1,27 @@
-﻿
-FD:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\App.xaml;;
-FD:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\MainWindow.xaml;;
-FD:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\UserControls\InfoCard.xaml;;
-FD:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\UserControls\menubutton.xaml;;
-FD:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\UserControls\Province.xaml;;
-FD:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\View\Account.xaml;;
-FD:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\View\AddContract.xaml;;
-FD:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\View\ContractManagement.xaml;;
-FD:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\View\DwellerManagement.xaml;;
-FD:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\View\EmployeeManagement.xaml;;
-FD:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\View\FinanceManagement.xaml;;
-FD:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\View\Home.xaml;;
-FD:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\View\OrderManagement.xaml;;
-FD:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\View\ReceiptManagement.xaml;;
-FD:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\View\RoomManagement.xaml;;
+﻿D:\net\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\GeneratedInternalTypeHelper.g.cs
+FD:\net\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\App.xaml;;
+FD:\net\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\MainWindow.xaml;;
+FD:\net\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\ResourceXAML\ResourceDictionary.xaml;;
+FD:\net\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\UserControls\BlockCard.xaml;;
+FD:\net\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\UserControls\BlockEntityCard.xaml;;
+FD:\net\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\UserControls\InfoCard.xaml;;
+FD:\net\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\UserControls\menubutton.xaml;;
+FD:\net\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\UserControls\Province.xaml;;
+FD:\net\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\UserControls\RoomCard.xaml;;
+FD:\net\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\View\Account.xaml;;
+FD:\net\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\View\AddContract.xaml;;
+FD:\net\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\View\AddDweller.xaml;;
+FD:\net\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\View\BlockBillManagement.xaml;;
+FD:\net\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\View\BlockDwellerManagement.xaml;;
+FD:\net\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\View\BlockManagement.xaml;;
+FD:\net\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\View\BlockRequestManagement.xaml;;
+FD:\net\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\View\BlockView.xaml;;
+FD:\net\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\View\ContractManagement.xaml;;
+FD:\net\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\View\DwellerManagement.xaml;;
+FD:\net\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\View\EmployeeManagement.xaml;;
+FD:\net\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\View\FinanceManagement.xaml;;
+FD:\net\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\View\Home.xaml;;
+FD:\net\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\View\OrderManagement.xaml;;
+FD:\net\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\View\ReceiptManagement.xaml;;
+FD:\net\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\View\RoomManagement.xaml;;
 

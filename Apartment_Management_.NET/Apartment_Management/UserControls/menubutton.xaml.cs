@@ -18,9 +18,31 @@ namespace Apartment_Management.UserControls
 {
     /// <summary>
     /// Interaction logic for menubutton.xaml
-    /// </summary>
+    /// </summary>  
     public partial class menubutton : UserControl
     {
+        public static readonly DependencyProperty CommandProperty = DependencyProperty.Register(
+        nameof(Command),
+        typeof(ICommand),
+        typeof(menubutton),
+        new PropertyMetadata(null));
+
+        public static readonly DependencyProperty CommandParameterProperty = DependencyProperty.Register(
+           nameof(CommandParameter),
+           typeof(object),
+           typeof(menubutton),
+           new PropertyMetadata(null));
+
+        public object CommandParameter
+        {
+            get => GetValue(CommandParameterProperty);
+            set => SetValue(CommandParameterProperty, value);
+        }
+        public ICommand Command
+        {
+            get => (ICommand)GetValue(CommandProperty);
+            set => SetValue(CommandProperty, value);
+        }
         public menubutton()
         {
             InitializeComponent();
@@ -54,10 +76,10 @@ namespace Apartment_Management.UserControls
 		public static readonly RoutedEvent ClickEvent =
 			EventManager.RegisterRoutedEvent("Click", RoutingStrategy.Bubble, typeof(RoutedEventHandler), typeof(menubutton));
 
-		private void Button_Click(object sender, RoutedEventArgs e)
-		{
-			RaiseEvent(new RoutedEventArgs(ClickEvent));
-		}
+		//private void Button_Click(object sender, RoutedEventArgs e)
+		//{
+		//	RaiseEvent(new RoutedEventArgs(ClickEvent));
+		//}
 
 	}
 }

@@ -364,5 +364,10 @@
                 </Trigger>
             </Style.Triggers>
         </Style>
+        <ResourceDictionary x:Key="Xamldictionary">
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ResourceXAML/ResourceDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

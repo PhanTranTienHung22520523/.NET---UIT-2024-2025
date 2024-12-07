@@ -3,10 +3,115 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
+             xmlns:uc="clr-namespace:Apartment_Management.UserControls"
              xmlns:local="clr-namespace:Apartment_Management.View"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="800"
+             Background="#151f2d">
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="boolToVis"/>
+    </UserControl.Resources>
     <Grid>
-            
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <!--Searchbar-->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+
+            <!--Search Textbox-->
+            <TextBlock Margin="40 0 15 0" VerticalAlignment="Center" Foreground="#9ea4ad" Panel.ZIndex="1"
+                IsHitTestVisible="False" Text="Search here ... "
+                Visibility="{Binding ElementName=textBox, Path=Text.IsEmpty, Converter={StaticResource boolToVis}}"/>
+            <TextBox x:Name="textBox" Style="{StaticResource searchTextBox}"/>
+            <Icon:PackIconMaterial Kind="Magnify" Width="15" Height="15" Foreground="#9ea4ad" Margin="15 0 0 0" 
+                            HorizontalAlignment="Left" 
+                            VerticalAlignment="Center"/>
+
+            <!--Buttons-->
+            <StackPanel Orientation="Horizontal" Grid.Column="1" Margin="20 0 0 0">
+                <Button Style="{StaticResource topMenuButton}">
+                    <Icon:PackIconMaterial Kind="Bell" Style="{StaticResource topMenuButtonIcon}" />
+                </Button>
+
+                <Button Style="{StaticResource topMenuButton}">
+                    <Icon:PackIconMaterial Kind="Bookmark" Style="{StaticResource topMenuButtonIcon}" />
+                </Button>
+
+                <Button Style="{StaticResource topMenuButton}" Background="#1e2e44">
+                    <Icon:PackIconMaterial Kind="Account" Style="{StaticResource topMenuButtonIcon}" />
+                </Button>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="2">
+            <TabControl Margin="10" Background="Transparent">
+                <TabControl.ItemContainerStyle>
+                    <Style TargetType="TabItem">
+                        <Setter Property="Background" Value="#1e2e44" />
+                        <Setter Property="Foreground" Value="#9ea4ad" />
+                    </Style>
+                </TabControl.ItemContainerStyle>
+                <TabItem Header="Đã xử lý">
+                    <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="5">
+                        <DataGrid 
+                AutoGenerateColumns="False" 
+                ItemsSource="{Binding PaidBills}" 
+                CanUserAddRows="False" 
+                Background="Transparent" 
+                Foreground="#9ea4ad">
+                            <DataGrid.Resources>
+                                <Style TargetType="DataGridColumnHeader">
+                                    <Setter Property="Background" Value="#1e2e44" />
+                                    <Setter Property="Foreground" Value="#9ea4ad" />
+                                    <Setter Property="FontWeight" Value="Bold" />
+                                </Style>
+                            </DataGrid.Resources>
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Mã Yêu Cầu" Binding="{Binding RequestId}" Width="*" />
+                                <DataGridTextColumn Header="Người Yêu Cầu" Binding="{Binding CustomerName}" Width="*" />
+                                <DataGridTextColumn Header="Tòa" Binding="{Binding Block}" Width="*" />
+                                <DataGridTextColumn Header="Phòng" Binding="{Binding Room}" Width="*" />
+                                <DataGridTextColumn Header="Loại Yêu Cầu" Binding="{Binding RequestType}" Width="*" />
+                                <DataGridTextColumn Header="Ngày Xử lý" Binding="{Binding ProcessedDate}" Width="*" />
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </ScrollViewer>
+                </TabItem>
+
+                <!-- Tab Đã Quá Hạn -->
+                <TabItem Header="Chưa xử lý">
+                    <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="5">
+                        <DataGrid 
+                AutoGenerateColumns="False" 
+                ItemsSource="{Binding OverdueBills}" 
+                CanUserAddRows="False" 
+                Background="Transparent" 
+                Foreground="#9ea4ad">
+                            <DataGrid.Resources>
+                                <Style TargetType="DataGridColumnHeader">
+                                    <Setter Property="Background" Value="#1e2e44" />
+                                    <Setter Property="Foreground" Value="#9ea4ad" />
+                                    <Setter Property="FontWeight" Value="Bold" />
+                                </Style>
+                            </DataGrid.Resources>
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Mã Yêu Cầu" Binding="{Binding RequestId}" Width="*" />
+                                <DataGridTextColumn Header="Người Yêu Cầu" Binding="{Binding CustomerName}" Width="*" />
+                                <DataGridTextColumn Header="Loại Yêu Cầu" Binding="{Binding RequestType}" Width="*" />
+                                <DataGridTextColumn Header="Tòa" Binding="{Binding Block}" Width="*" />
+                                <DataGridTextColumn Header="Phòng" Binding="{Binding Room}" Width="*" />
+                                <DataGridTextColumn Header="Ngày Yêu Cầu" Binding="{Binding RequestDate}" Width="*" />
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </ScrollViewer>
+                </TabItem>
+            </TabControl>
+        </Grid>
     </Grid>
 </UserControl>
