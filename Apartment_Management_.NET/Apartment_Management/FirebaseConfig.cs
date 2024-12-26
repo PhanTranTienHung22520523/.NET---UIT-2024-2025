@@ -30,8 +30,6 @@ namespace Apartment_Management
 						{
 							Credential = GoogleCredential.FromFile(path)
 						});
-
-						MessageBox.Show("Firebase Initialized");
 					}
 				}
 				else

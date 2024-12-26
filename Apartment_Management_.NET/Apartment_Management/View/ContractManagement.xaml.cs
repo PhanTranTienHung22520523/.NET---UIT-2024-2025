@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Apartment_Management.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,26 +24,7 @@ namespace Apartment_Management.View
 		public ContractManagement()
 		{
 			InitializeComponent();
-		}
-
-		private void btn_noti_Click(object sender, RoutedEventArgs e)
-		{
-
-		}
-
-		private void btn_acc_Click(object sender, RoutedEventArgs e)
-		{
-			(Window.GetWindow(this) as MainWindow)?.NavigateToAccount();
-		}
-
-		private void btn_addcontract_Click(object sender, RoutedEventArgs e)
-		{
-
-		}
-
-		private void txtbox_find_KeyDown(object sender, KeyEventArgs e)
-		{
-
+			DataContext = new Contract_View_Model();
 		}
 	}
 }

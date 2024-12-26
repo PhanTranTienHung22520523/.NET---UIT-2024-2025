@@ -25,14 +25,5 @@ namespace Apartment_Management.View
 			InitializeComponent();
 			this.DataContext = new ViewModel.Receipt_View_Model();
 		}
-		private void btn_acc_Click(object sender, RoutedEventArgs e)
-		{
-			(Window.GetWindow(this) as MainWindow)?.NavigateToAccount();
-		}
-
-		private void txtbox_find_KeyDown(object sender, KeyEventArgs e)
-		{
-
-		}
 	}
 }

@@ -18,21 +18,12 @@ namespace Apartment_Management.View
 	/// <summary>
 	/// Interaction logic for AddContract.xaml
 	/// </summary>
-	public partial class AddContract : UserControl
+	public partial class AddContract : Window
 	{
 		public AddContract()
 		{
 			InitializeComponent();
-		}
-
-		private void btn_save_Click(object sender, RoutedEventArgs e)
-		{
-
-		}
-
-		private void btn_cancel_Click(object sender, RoutedEventArgs e)
-		{
-
+			DataContext= new ViewModel.AddContract_View_Model();
 		}
 	}
 }

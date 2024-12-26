@@ -29,19 +29,23 @@
             <TextBlock Margin="40 0 15 0" VerticalAlignment="Center" Foreground="#9ea4ad" Panel.ZIndex="1" 
 IsHitTestVisible="False" Text="Search here ... "
 Visibility="{Binding ElementName=txtbox_find, Path=Text.IsEmpty, Converter={StaticResource boolToVis}}"/>
-            <TextBox Style="{StaticResource searchTextBox}" x:Name="txtbox_find" KeyDown="txtbox_find_KeyDown"/>
+            <TextBox Style="{StaticResource searchTextBox}" x:Name="txtbox_find"  Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}">
+                <TextBox.InputBindings>
+                    <KeyBinding Command="{Binding SearchCommand}" Key="Enter" CommandParameter="{Binding Text, ElementName=txtbox_find}" />
+                </TextBox.InputBindings>
+            </TextBox>
             <Icon:PackIconMaterial Kind="Magnify" Width="15" Height="15" Foreground="#9ea4ad" Margin="15 0 0 0" 
             HorizontalAlignment="Left" 
             VerticalAlignment="Center"/>
 
             <!--Buttons-->
             <StackPanel Orientation="Horizontal" Grid.Column="1" Margin="20 0 0 0">
-                <Button Style="{StaticResource topMenuButton}" x:Name="btn_noti" Click="btn_noti_Click" Cursor="Hand">
+                <Button Style="{StaticResource topMenuButton}" x:Name="btn_noti"  Cursor="Hand" Command="{Binding NotificationCommand}">
                     <Icon:PackIconMaterial Kind="Bell" Style="{StaticResource topMenuButtonIcon}" />
                 </Button>
 
 
-                <Button Style="{StaticResource topMenuButton}" Background="#1e2e44" x:Name="btn_acc" Click="btn_acc_Click" Cursor="Hand">
+                <Button Style="{StaticResource topMenuButton}" Background="#1e2e44" x:Name="btn_acc"  Cursor="Hand" Command="{Binding AccountCommand}">
                     <Icon:PackIconMaterial Kind="Account" Style="{StaticResource topMenuButtonIcon}" />
                 </Button>
             </StackPanel>
@@ -49,24 +53,58 @@ Visibility="{Binding ElementName=txtbox_find, Path=Text.IsEmpty, Converter={Stat
         <DataGrid x:Name="ContractList" Grid.Row="2" Margin="20,30,20,20"
                   Background="#202c44" Foreground="#ffffff"
                   AutoGenerateColumns="False"
-                  HorizontalScrollBarVisibility="Auto"
-                  VerticalScrollBarVisibility="Auto"
-                  GridLinesVisibility="Vertical">
+                  HorizontalScrollBarVisibility="Hidden"
+                  VerticalScrollBarVisibility="Hidden"
+                  GridLinesVisibility="Vertical"
+                  ItemsSource="{Binding Contracts}" 
+                  Height="540"
+                  RowHeight="30"
+                  FontSize="15"
+                  IsReadOnly="True"
+                  >
+            <DataGrid.RowStyle>
+                <Style TargetType="DataGridRow">
+                    <Setter Property="Background" Value="#243347"/>
+                </Style>
+            </DataGrid.RowStyle>
+
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Contract ID" Binding="{Binding ContractID}" Width="*" 
+                <DataGridTextColumn Header="Contract ID" Binding="{Binding Contract_Id}" Width="*" 
                                     CanUserSort="False"/>
-                <DataGridTextColumn Header="Customer Name" Binding="{Binding CustomerName}" Width="*"
+                <DataGridTextColumn Header="Customer Name" Binding="{Binding Dweller_Name}" Width="*"
                                     CanUserSort="True"/>
-                <DataGridTextColumn Header="Type" Binding="{Binding Type}" Width="*" 
+                <DataGridTextColumn Header="Room ID" Binding="{Binding Room_Id}" Width="*" 
                                     CanUserSort="True"/>
-                <DataGridTextColumn Header="Date Applied" Binding="{Binding DateStarted}" Width="*"
+                <DataGridTextColumn Header="Date Applied" Binding="{Binding Contract_StartDate}" Width="*"
                                     CanUserSort="True"/>
             </DataGrid.Columns>
 
             <!-- Thay đổi màu nền của các cột -->
             <DataGrid.CellStyle>
                 <Style TargetType="DataGridCell">
+                    <!--<Setter Property="Background" Value="#243347" />-->
+                    <!--<Setter Property="HorizontalAlignment" Value="Center"/>
+                    <Setter Property="VerticalAlignment" Value="Center"/>-->
+                    <Setter Property="Cursor" Value="Hand"/>
                     <Setter Property="Background" Value="#243347" />
+                    <Setter Property="Foreground" Value="White" />
+                    <Setter Property="BorderThickness" Value="0" />
+                    
+
+                    <!-- Căn giữa nội dung -->
+                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                    <Setter Property="VerticalAlignment" Value="Center"/>
+
+                    <!-- Xử lý khi ô được chọn -->
+                    <Style.Triggers>
+                        <!-- Khi ô được chọn -->
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Background" Value="#243347" />
+                            <!-- Màu nền khi được chọn -->
+                            <Setter Property="Foreground" Value="White" />
+                            <!-- Màu chữ khi được chọn -->
+                        </Trigger>
+                    </Style.Triggers>
                 </Style>
             </DataGrid.CellStyle>
 
@@ -79,7 +117,9 @@ Visibility="{Binding ElementName=txtbox_find, Path=Text.IsEmpty, Converter={Stat
                     <Setter Property="HorizontalContentAlignment" Value="Center" />
                     <Setter Property="VerticalContentAlignment" Value="Center" />
                     <Setter Property="BorderBrush" Value="White"/>
-                    <Setter Property="BorderThickness" Value="0,0,1,0"/>
+                    <Setter Property="BorderThickness" Value="0,0,1,1"/>
+                    <Setter Property="Height" Value="35"/>
+                    <Setter Property="Cursor" Value="Hand"/>
                 </Style>
             </DataGrid.ColumnHeaderStyle>
         </DataGrid>
@@ -97,7 +137,7 @@ Visibility="{Binding ElementName=txtbox_find, Path=Text.IsEmpty, Converter={Stat
                     BorderBrush="White"
                 Cursor="Hand"
                 x:Name="btn_addcontract"
-                    Click="btn_addcontract_Click"/>
+                  Command="{Binding AddContractCommand}" />
 
     </Grid>
 </UserControl>

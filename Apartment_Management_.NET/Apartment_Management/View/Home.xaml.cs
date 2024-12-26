@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Apartment_Management.ViewModel;
 
 namespace Apartment_Management.View
 {
@@ -23,46 +24,7 @@ namespace Apartment_Management.View
 		public Home()
 		{
 			InitializeComponent();
-		}
-
-		private void search_textbox_KeyDown(object sender, KeyEventArgs e)
-		{
-
-        }
-
-		private void btn_noti_Click(object sender, RoutedEventArgs e)
-		{
-
-		}
-
-		private void btn_acc_Click(object sender, RoutedEventArgs e)
-		{
-			(Window.GetWindow(this) as MainWindow)?.NavigateToAccount();
-		}
-
-		private void btn_order_today_Click(object sender, RoutedEventArgs e)
-		{
-
-		}
-
-		private void btn_new_dweller_Click(object sender, RoutedEventArgs e)
-		{
-
-		}
-
-		private void btn_fill_rate_Click(object sender, RoutedEventArgs e)
-		{
-
-		}
-
-		private void btn_choose_block_Click(object sender, RoutedEventArgs e)
-		{
-
-		}
-
-		private void btn_sort_province_Click(object sender, RoutedEventArgs e)
-		{
-
+			DataContext = new Home_View_Model();
 		}
 	}
 }

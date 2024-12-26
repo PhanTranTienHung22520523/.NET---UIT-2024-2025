@@ -101,3 +101,9 @@ D:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Managem
 D:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\bin\Debug\System.ValueTuple.xml
 D:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\bin\Debug\Assets\apartment-management-2h-firebase-adminsdk-17i68-032a678aec.json
+D:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\bin\Debug\System.IO.Pipelines.dll
+D:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\bin\Debug\System.Text.Encodings.Web.dll
+D:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\bin\Debug\System.Text.Json.dll
+D:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\bin\Debug\System.IO.Pipelines.xml
+D:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\bin\Debug\System.Text.Encodings.Web.xml
+D:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\bin\Debug\System.Text.Json.xml

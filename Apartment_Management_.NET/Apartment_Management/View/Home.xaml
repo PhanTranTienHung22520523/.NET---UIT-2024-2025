@@ -40,12 +40,12 @@
 
             <!--Buttons-->
             <StackPanel Orientation="Horizontal" Grid.Column="1" Margin="30 0 0 0">
-                <Button Style="{StaticResource topMenuButton}" Margin="0 0 20 0"  x:Name="btn_noti" Click="btn_noti_Click" Cursor="Hand">
+                <Button Style="{StaticResource topMenuButton}" Margin="0 0 20 0"  x:Name="btn_noti" Cursor="Hand">
                     <Icon:PackIconMaterial Kind="Bell" Style="{StaticResource topMenuButtonIcon}" />
                 </Button>
 
 
-                <Button Style="{StaticResource topMenuButton}" Background="#1e2e44" Margin="0 0 70 0" x:Name="btn_acc" Click="btn_acc_Click" Cursor="Hand">
+                <Button Style="{StaticResource topMenuButton}" Background="#1e2e44" Margin="0 0 70 0" x:Name="btn_acc"  Cursor="Hand">
                     <Icon:PackIconMaterial Kind="Account" Style="{StaticResource topMenuButtonIcon}" />
                 </Button>
             </StackPanel>
@@ -54,7 +54,7 @@
         <!--MiddleTopSection-->
         <Grid Grid.Row="1" Grid.Column="1" Margin="50 0">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>   
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
@@ -62,16 +62,16 @@
             <!--InfoCardsLeft-->
 
             <StackPanel Margin="10 0">
-                <uc:InfoCard Number="30" Title="Today's Orders" x:Name="btn_order_today" Cursor="Hand" Click="btn_order_today_Click" />
-                <uc:InfoCard Number="15" Title="This Month's New Dwellers" x:Name="btn_new_dweller" Cursor="Hand" Click="btn_new_dweller_Click"/>
-                <uc:InfoCard Number="90" Title="Filled Room Rate" x:Name="btn_fill_rate" Cursor="Hand" Click="btn_fill_rate_Click"/>
+                <uc:InfoCard Number="{Binding TodaysOrders}" Title="Today's Orders" x:Name="btn_order_today" Cursor="Hand"  />
+                <uc:InfoCard Number="{Binding  NewDwellers}" Title="This Month's New Dwellers" x:Name="btn_new_dweller" Cursor="Hand" />
+                <uc:InfoCard Number="{Binding FilledRoomRate}" Title="Filled Room Rate (%)" x:Name="btn_fill_rate" Cursor="Hand" />
             </StackPanel>
 
             <!--InfoV=CardsRight-->
 
             <StackPanel Margin="10 0" Grid.Column="1">
-                <uc:InfoCard Number="30" Title="Today's Solved Orders" x:Name="btn_solvedorder_today" Cursor="Hand"/>
-                <uc:InfoCard Number="15" Title="This Month's New Contracts" x:Name="btn_new_contract" Cursor="Hand"/>
+                <uc:InfoCard Number="{Binding SolvedOrders}" Title="Today's Solved Orders" x:Name="btn_solvedorder_today" Cursor="Hand"/>
+                <uc:InfoCard Number="{Binding NewContracts}" Title="This Month's New Contracts" x:Name="btn_new_contract" Cursor="Hand"/>
             </StackPanel>
 
             <!--CostSection-->
@@ -136,7 +136,7 @@
                     <TextBlock Text="Block Population" Style="{StaticResource titleText}"/>
 
                     <!--FilterButton-->
-                    <Button Style="{StaticResource titleButton}" Cursor="Hand" x:Name="btn_choose_block" Click="btn_choose_block_Click">
+                    <Button Style="{StaticResource titleButton}" Cursor="Hand" x:Name="btn_choose_block" >
                         <Icon:PackIconMaterial Kind="Tune" Style="{StaticResource topMenuButtonIcon}"/>
                     </Button>
 
@@ -190,7 +190,7 @@
                     <TextBlock Text="Top Provinces" Style="{StaticResource titleText}"/>
 
                     <!--FilterButton-->
-                    <Button Style="{StaticResource titleButton}" Margin="0 -3 40 0" x:Name="btn_sort_province" Click="btn_sort_province_Click">
+                    <Button Style="{StaticResource titleButton}" Margin="0 -3 40 0" x:Name="btn_sort_province" >
                         <Icon:PackIconMaterial Kind="Tune" Style="{StaticResource topMenuButtonIcon}"/>
                     </Button>
 

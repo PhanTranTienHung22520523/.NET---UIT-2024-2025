@@ -3,30 +3,58 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.Json.Serialization;
+using Newtonsoft.Json;
 
 namespace Apartment_Management.Model
 {
 	public class Contract
 	{
-		private string Contract_Id { get; set; }
+	
+		public string Contract_Id { get; set; }
+
+
+		[JsonProperty("id_dweller")]
 		public string Dweller_Id { get; set; }
+
+
+		[JsonProperty("id_room")]
 		public string Room_Id { get; set; }
+
+
+		[JsonProperty("contract_description")]
 		public string Contract_Description { get; set; }
+
+
+		[JsonProperty("contract_price")]
 		public decimal Contract_Price { get; set; }
 
+
+		[JsonProperty("contract_start")]
 		public DateTime Contract_StartDate { get; set; }
+
+
+		[JsonProperty("contract_end")]
 		public DateTime Contract_EndDate { get; set; }
-		public DateTime Create_At { get; set; }
-		public DateTime Update_At { get; set; }
+
+
+
+		[JsonProperty("create_by")]
 		public string Create_By { get; set; }
-		public string Update_By { get; set; }
-		public DateTime Delete_At { get; set; }
+
+
+		[JsonProperty("create_at")]
+		public DateTime Create_At { get; set; }
+
+		public string Dweller_Name { get; set; }
+
 
 		public Contract()
 		{
+
 		}
 
-		public Contract(string Contract_Id, string Dweller_Id, string Room_Id, string Contract_Description, decimal Contract_Price, DateTime Contract_StartDate, DateTime Contract_EndDate, DateTime Create_At, DateTime Update_At, string Create_By, string Update_By, DateTime Delete_At)
+		public Contract(string Contract_Id, string Dweller_Id, string Room_Id, string Contract_Description, decimal Contract_Price, DateTime Contract_StartDate, DateTime Contract_EndDate, string Create_By, DateTime create_At, string dweller_Name)
 		{
 			this.Contract_Id = Contract_Id;
 			this.Dweller_Id = Dweller_Id;
@@ -35,11 +63,9 @@ namespace Apartment_Management.Model
 			this.Contract_Price = Contract_Price;
 			this.Contract_StartDate = Contract_StartDate;
 			this.Contract_EndDate = Contract_EndDate;
-			this.Create_At = Create_At;
-			this.Update_At = Update_At;
 			this.Create_By = Create_By;
-			this.Update_By = Update_By;
-			this.Delete_At = Delete_At;
+			this.Create_At = create_At;
+			this.Dweller_Name = dweller_Name;
 		}
 	}
 }
