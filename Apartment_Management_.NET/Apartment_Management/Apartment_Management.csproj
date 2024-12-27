@@ -77,6 +77,9 @@
     <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.9.0.0\lib\net462\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Xaml.Behaviors, Version=1.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Xaml.Behaviors.Wpf.1.1.135\lib\net462\Microsoft.Xaml.Behaviors.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -170,6 +173,7 @@
     </Compile>
     <Compile Include="ViewModel\Account_View_Model.cs" />
     <Compile Include="ViewModel\AddContract_View_Model.cs" />
+    <Compile Include="ViewModel\ContractDetail_View_Model.cs" />
     <Compile Include="ViewModel\Contract_View_Model.cs" />
     <Compile Include="ViewModel\Dweller_View_Model.cs" />
     <Compile Include="ViewModel\Employee_View_Model.cs" />
@@ -184,6 +188,9 @@
     </Compile>
     <Compile Include="View\AddContract.xaml.cs">
       <DependentUpon>AddContract.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ContractDetails.xaml.cs">
+      <DependentUpon>ContractDetails.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\ContractManagement.xaml.cs">
       <DependentUpon>ContractManagement.xaml</DependentUpon>
@@ -238,6 +245,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\AddContract.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ContractDetails.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

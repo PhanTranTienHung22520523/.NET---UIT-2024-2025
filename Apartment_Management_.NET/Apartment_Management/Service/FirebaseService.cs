@@ -82,15 +82,12 @@ namespace Apartment_Management.Service
 				.Child("Rooms") // Đường dẫn đến "Rooms"
 				.OnceAsync<dynamic>();
 
-			// Đếm tổng số phòng
-			int totalRooms = rooms.Count;
-
 			// Đếm số phòng đã được lấp đầy
 			int filledRooms = rooms
-				.Count(room => room.Object.room_status?.ToString() == "Rented");
+				.Count(room => room.Object.room_status?.ToString() == "Empty");
 
 			// Tính tỷ lệ phòng lấp đầy (phần trăm)
-			double rateFilledRoom = (double)filledRooms / totalRooms * 100;
+			double rateFilledRoom = (double)filledRooms / 80 * 100;
 
 			return Math.Round(rateFilledRoom, 2); // Làm tròn 2 chữ số thập phân
 		}

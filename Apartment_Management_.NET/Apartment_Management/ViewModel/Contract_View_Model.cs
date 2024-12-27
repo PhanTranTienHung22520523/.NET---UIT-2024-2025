@@ -12,6 +12,7 @@ using System.Windows.Input;
 using Apartment_Management.Helper;
 using System.Linq;
 using System.Windows.Controls;
+using Apartment_Management.View;
 
 
 namespace Apartment_Management.ViewModel
@@ -24,6 +25,23 @@ namespace Apartment_Management.ViewModel
 		public ObservableCollection<Contract> Contracts { get; set; }
 		public ObservableCollection<Contract> AllContracts { get; set; }
 
+
+		private Contract _selected;
+		
+
+		public Contract Selected
+		{
+			get => _selected;
+			set
+			{
+				if (_selected != value)
+				{
+					_selected = value;
+					OnPropertyChanged();
+				}
+			}
+		}
+
 		public Contract_View_Model()
 		{
 			_firebaseClient = new FirebaseClient(firebaseUrl);
@@ -34,9 +52,25 @@ namespace Apartment_Management.ViewModel
 			AccountCommand = new RelayCommand(OnAccount);
 			AddContractCommand = new RelayCommand(OnAddContract);
 			SearchCommand = new RelayCommand<string>(OnSearch);
+			OpenDetails = new RelayCommand(OnOpenDetails);
 		}
 
-		
+
+		private void OnOpenDetails(object obj)
+		{
+			if (Selected != null)
+			{
+				var detailWindow = new ContractDetails
+				{
+					DataContext = new ContractDetail_View_Model(Selected)
+				};
+				detailWindow.ShowDialog();
+			}
+			else
+			{
+				MessageBox.Show("Please select a contract");
+			}
+		}
 
 		private async void LoadContractAsync()
 		{
@@ -118,6 +152,8 @@ namespace Apartment_Management.ViewModel
 		public ICommand AccountCommand { get; set; }
 		public ICommand AddContractCommand { get; set; }
 		public ICommand SearchCommand { get; set; }
+
+		public ICommand OpenDetails { get; set; }
 
 
 		private string _searchText;

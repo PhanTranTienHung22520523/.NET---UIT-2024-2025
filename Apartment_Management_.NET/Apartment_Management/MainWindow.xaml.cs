@@ -36,6 +36,7 @@ namespace Apartment_Management
 			Finance_Management.IsActive = false;
 		}
 
+
 		public void NavigateToAccount()
 		{
 			MainContent.Content = new View.Account();
@@ -43,7 +44,7 @@ namespace Apartment_Management
 
 		private void Border_MouseDown(object sender, MouseButtonEventArgs e)
 		{
-			if (e.ChangedButton == MouseButton.Left)
+			if (e.LeftButton == MouseButtonState.Pressed)
 			{
 				this.DragMove();
 			}

@@ -12,6 +12,9 @@ namespace Apartment_Management.Helper
 		private readonly Action<object> _execute;//Hàm thực thi
 		private readonly Predicate<object> _canExecute;//Hàm kiểm tra điều kiện thực thi
 
+		private readonly Action _execute2;
+		private readonly Func<bool> _canExecute2;
+
 
 		public RelayCommand(Action<object> execute, Predicate<object> canExecute=null)
 		{
@@ -19,6 +22,11 @@ namespace Apartment_Management.Helper
 			_canExecute = canExecute;
 		}
 
+		public RelayCommand(Action execute, Func<bool> canExecute = null)
+		{
+			_execute2 = execute;
+			_canExecute2 = canExecute;
+		}
 
 		public bool CanExecute(object parameter)
 		{
@@ -42,6 +50,23 @@ namespace Apartment_Management.Helper
 			}
 		}
 
+
+		public event EventHandler CanExecute2Changed;
+
+		public bool CanExecute2(object parameter)
+		{
+			return _canExecute2 == null || _canExecute2();
+		}
+
+		public void Execute2(object parameter)
+		{
+			_execute2();
+		}
+
+		public void RaiseCanExecute2Changed()
+		{
+			CanExecute2Changed?.Invoke(this, EventArgs.Empty);
+		}
 	}
 
 	public class RelayCommand<T> : ICommand
@@ -65,4 +90,6 @@ namespace Apartment_Management.Helper
 			remove => CommandManager.RequerySuggested -= value;
 		}
 	}
+
+
 }

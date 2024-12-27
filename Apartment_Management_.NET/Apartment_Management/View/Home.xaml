@@ -62,16 +62,26 @@
             <!--InfoCardsLeft-->
 
             <StackPanel Margin="10 0">
-                <uc:InfoCard Number="{Binding TodaysOrders}" Title="Today's Orders" x:Name="btn_order_today" Cursor="Hand"  />
-                <uc:InfoCard Number="{Binding  NewDwellers}" Title="This Month's New Dwellers" x:Name="btn_new_dweller" Cursor="Hand" />
-                <uc:InfoCard Number="{Binding FilledRoomRate}" Title="Filled Room Rate (%)" x:Name="btn_fill_rate" Cursor="Hand" />
+                <uc:InfoCard Number="{Binding TodaysOrders}" Title="Today's Orders" x:Name="btn_order_today" Cursor="Hand" 
+                             Command="{Binding InforCardClickCommand}"
+                             CommandParameter="btn_order_today"/>
+                <uc:InfoCard Number="{Binding  NewDwellers}" Title="This Month's New Dwellers" x:Name="btn_new_dweller" Cursor="Hand" 
+                              Command="{Binding InforCardClickCommand}"
+ CommandParameter="btn_new_dwellers"/>
+                <uc:InfoCard Number="{Binding FilledRoomRate}" Title="Filled Room Rate (%)" x:Name="btn_fill_rate" Cursor="Hand"
+                              Command="{Binding InforCardClickCommand}"
+ CommandParameter="btn_fill_rate"/>
             </StackPanel>
 
             <!--InfoV=CardsRight-->
 
             <StackPanel Margin="10 0" Grid.Column="1">
-                <uc:InfoCard Number="{Binding SolvedOrders}" Title="Today's Solved Orders" x:Name="btn_solvedorder_today" Cursor="Hand"/>
-                <uc:InfoCard Number="{Binding NewContracts}" Title="This Month's New Contracts" x:Name="btn_new_contract" Cursor="Hand"/>
+                <uc:InfoCard Number="{Binding SolvedOrders}" Title="Today's Solved Orders" x:Name="btn_solvedorder_today" Cursor="Hand"
+                              Command="{Binding InforCardClickCommand}"
+ CommandParameter="btn_solvedorder_today"/>
+                <uc:InfoCard Number="{Binding NewContracts}" Title="This Month's New Contracts" x:Name="btn_new_contract" Cursor="Hand"
+                              Command="{Binding InforCardClickCommand}"
+ CommandParameter="btn_new_contracts"/>
             </StackPanel>
 
             <!--CostSection-->
@@ -114,8 +124,8 @@
                             </lvc:Axis>
                         </lvc:CartesianChart.AxisY>
                         <lvc:CartesianChart.Series>
-                            <lvc:StackedColumnSeries Fill="LightGreen" MaxColumnWidth="15" Values="300, 250, 400, 500, 600, 600, 500, 500, 400, 500, 600, 100"/>
-                            <lvc:StackedColumnSeries Fill="AntiqueWhite" MaxColumnWidth="15" Values="500, 400, 300, 250, 300, 200, 400, 200"/>
+                            <lvc:StackedColumnSeries Fill="LightGreen" MaxColumnWidth="15" Values="{Binding listPublicOrders}"/>
+                            <lvc:StackedColumnSeries Fill="AntiqueWhite" MaxColumnWidth="15" Values="{Binding listResidencedOrders}"/>
                         </lvc:CartesianChart.Series>
                     </lvc:CartesianChart>
                 </Grid>

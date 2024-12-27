@@ -107,3 +107,8 @@ D:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Managem
 D:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\bin\Debug\System.IO.Pipelines.xml
 D:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\bin\Debug\System.Text.Encodings.Web.xml
 D:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\bin\Debug\System.Text.Json.xml
+D:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\View\ContractDetails.g.cs
+D:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\bin\Debug\Microsoft.Xaml.Behaviors.dll
+D:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+D:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\bin\Debug\Microsoft.Xaml.Behaviors.xml
+D:\HK1 - Năm 3\.NET---UIT-2024-2025\Apartment_Management_.NET\Apartment_Management\obj\Debug\View\ContractDetails.baml
