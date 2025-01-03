@@ -24,7 +24,7 @@ namespace Apartment_Management.View
 		public Home()
 		{
 			InitializeComponent();
-			DataContext = new Home_View_Model();
-		}
-	}
+            DataContext = new Home_View_Model();
+        }
+    }
 }

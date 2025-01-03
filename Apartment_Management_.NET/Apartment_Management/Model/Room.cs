@@ -14,7 +14,10 @@ namespace Apartment_Management.Model
 		[JsonProperty("id_type")]
 		public string TypeRoomID { get; set; }
 
-		[JsonProperty("id_block")]
+        [JsonProperty("room_name")]
+        public string RoomName { get; set; }
+
+        [JsonProperty("id_block")]
 		public string BlockID { get; set; }
 
 		[JsonProperty("id_host")]
@@ -51,5 +54,18 @@ namespace Apartment_Management.Model
 			Create_At = create_At;
 			Create_By = create_By;
 		}
-	}
+        public Room(Room room)
+        {
+            RoomID = room.RoomID;
+            TypeRoomID = room.TypeRoomID;
+			RoomName = room.RoomName;
+            BlockID = room.BlockID;
+            HostID = room.HostID;
+            Member_number = room.Member_number;
+            Status = room.Status;
+            Price = room.Price;
+            Create_At = room.Create_At;
+            Create_By = room.Create_By;
+        }
+    }
 }

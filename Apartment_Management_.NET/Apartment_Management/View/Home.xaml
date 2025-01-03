@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:Apartment_Management.View"
              xmlns:uc="clr-namespace:Apartment_Management.UserControls"
              xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
-             xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+             xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf" xmlns:viewmodel="clr-namespace:Apartment_Management.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:Home_View_Model}"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <UserControl.Resources>
@@ -62,16 +62,26 @@
             <!--InfoCardsLeft-->
 
             <StackPanel Margin="10 0">
-                <uc:InfoCard Number="{Binding TodaysOrders}" Title="Today's Orders" x:Name="btn_order_today" Cursor="Hand"  />
-                <uc:InfoCard Number="{Binding  NewDwellers}" Title="This Month's New Dwellers" x:Name="btn_new_dweller" Cursor="Hand" />
-                <uc:InfoCard Number="{Binding FilledRoomRate}" Title="Filled Room Rate (%)" x:Name="btn_fill_rate" Cursor="Hand" />
+                <uc:InfoCard Number="{Binding TodaysOrders}" Title="Today's Orders" x:Name="btn_order_today" Cursor="Hand" 
+                             Command="{Binding InforCardClickCommand}"
+                             CommandParameter="btn_order_today"/>
+                <uc:InfoCard Number="{Binding  NewDwellers}" Title="This Month's New Dwellers" x:Name="btn_new_dweller" Cursor="Hand" 
+                              Command="{Binding InforCardClickCommand}"
+ CommandParameter="btn_new_dwellers"/>
+                <uc:InfoCard Number="{Binding FilledRoomRate}" Title="Filled Room Rate (%)" x:Name="btn_fill_rate" Cursor="Hand"
+                              Command="{Binding InforCardClickCommand}"
+ CommandParameter="btn_fill_rate"/>
             </StackPanel>
 
             <!--InfoV=CardsRight-->
 
             <StackPanel Margin="10 0" Grid.Column="1">
-                <uc:InfoCard Number="{Binding SolvedOrders}" Title="Today's Solved Orders" x:Name="btn_solvedorder_today" Cursor="Hand"/>
-                <uc:InfoCard Number="{Binding NewContracts}" Title="This Month's New Contracts" x:Name="btn_new_contract" Cursor="Hand"/>
+                <uc:InfoCard Number="{Binding SolvedOrders}" Title="Today's Solved Orders" x:Name="btn_solvedorder_today" Cursor="Hand"
+                              Command="{Binding InforCardClickCommand}"
+ CommandParameter="btn_solvedorder_today"/>
+                <uc:InfoCard Number="{Binding NewContracts}" Title="This Month's New Contracts" x:Name="btn_new_contract" Cursor="Hand"
+                              Command="{Binding InforCardClickCommand}"
+ CommandParameter="btn_new_contracts"/>
             </StackPanel>
 
             <!--CostSection-->
@@ -94,12 +104,12 @@
                     </StackPanel>
 
                     <!--Chart-->
-                    <lvc:CartesianChart LegendLocation="None" Margin="0 40 0 0">
+                    <lvc:CartesianChart LegendLocation="None" Margin="0 40 0 0" Series="{Binding ChartData}">
                         <lvc:CartesianChart.DataTooltip>
                             <lvc:DefaultTooltip Background="#24336a" Foreground="Pink"/>
                         </lvc:CartesianChart.DataTooltip>
                         <lvc:CartesianChart.AxisX>
-                            <lvc:Axis Foreground="#bcc0c6" ShowLabels="True" Labels="Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec">
+                            <lvc:Axis Foreground="#bcc0c6" ShowLabels="True" Labels="J,F,M,A,M,J,J,A,S,O,N,D"><!--//{Binding MonthLabels}-->
                                 <lvc:Axis.Separator>
                                     <lvc:Separator StrokeThickness="0" Step="1"/>
                                 </lvc:Axis.Separator>
@@ -107,16 +117,18 @@
                         </lvc:CartesianChart.AxisX>
 
                         <lvc:CartesianChart.AxisY>
-                            <lvc:Axis Foreground="#bcc0c6" ShowLabels="True" MinValue="0" MaxValue="1000">
+                            <lvc:Axis Foreground="#bcc0c6" ShowLabels="True" MinValue="0" MaxValue="50">
                                 <lvc:Axis.Separator>
                                     <lvc:Separator StrokeThickness="0"/>
                                 </lvc:Axis.Separator>
                             </lvc:Axis>
                         </lvc:CartesianChart.AxisY>
-                        <lvc:CartesianChart.Series>
-                            <lvc:StackedColumnSeries Fill="LightGreen" MaxColumnWidth="15" Values="300, 250, 400, 500, 600, 600, 500, 500, 400, 500, 600, 100"/>
-                            <lvc:StackedColumnSeries Fill="AntiqueWhite" MaxColumnWidth="15" Values="500, 400, 300, 250, 300, 200, 400, 200"/>
-                        </lvc:CartesianChart.Series>
+                        <!--<lvc:CartesianChart.Series>
+                            <lvc:StackedColumnSeries Fill="LightGreen" MaxColumnWidth="15" Values="{Binding listPublicOrders}"/>
+                            --><!--{Binding listPublicOrders}  {Binding Publica}--><!--
+                            <lvc:StackedColumnSeries Fill="AntiqueWhite" MaxColumnWidth="15" Values=""/>
+                            --><!--{Binding listResidencedOrders}   {Binding Resida}--><!--
+                        </lvc:CartesianChart.Series>-->
                     </lvc:CartesianChart>
                 </Grid>
             </Border>
@@ -135,10 +147,10 @@
                     <!--Title-->
                     <TextBlock Text="Block Population" Style="{StaticResource titleText}"/>
 
-                    <!--FilterButton-->
+                    <!--FilterButton--><!--
                     <Button Style="{StaticResource titleButton}" Cursor="Hand" x:Name="btn_choose_block" >
                         <Icon:PackIconMaterial Kind="Tune" Style="{StaticResource topMenuButtonIcon}"/>
-                    </Button>
+                    </Button>-->
 
                     <!--Legends-->
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0 0 40 0">
@@ -160,7 +172,7 @@
                         </lvc:CartesianChart.AxisX>
 
                         <lvc:CartesianChart.AxisY>
-                            <lvc:Axis Foreground="#bcc0c6" ShowLabels="True" MinValue="0" MaxValue="1000">
+                            <lvc:Axis Foreground="#bcc0c6" ShowLabels="True" MinValue="0" MaxValue="100">
                                 <lvc:Axis.Separator>
                                     <lvc:Separator StrokeThickness="1" Stroke="#2c3a54"/>
                                 </lvc:Axis.Separator>
@@ -169,7 +181,7 @@
 
                         <lvc:CartesianChart.Series>
                             <lvc:LineSeries StrokeThickness="2" Stroke="#6860e6" PointGeometrySize="0"
-                                    Values="200, 300, 500, 550, 520, 400, 300, 400, 600, 800, 800, 750">
+                                    Values="1,2,1,0,3,1,2,0,4,2,1,1">
                                 <lvc:LineSeries.Fill>
                                     <LinearGradientBrush>
                                         <GradientStop Color="#2e3966" Offset="0.4"/>
@@ -196,13 +208,8 @@
 
                     <!--ProvincesListView-->
                     <ListView Margin="0 50 0 0" Background="Transparent" BorderThickness="0" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden">
-                        <uc:Province Rank="1" ProvinceName="TP. Hồ Chí Minh" Population="1000" IsLevelUp="True"/>
-                        <uc:Province Rank="2" ProvinceName="Bình Dương" Population="600" IsLevelUp="True"/>
-                        <uc:Province Rank="3" ProvinceName="TP. Hà Nội" Population="500" IsLevelUp="True"/>
-                        <uc:Province Rank="4" ProvinceName="Kon Tum" Population="100" IsLevelUp="True"/>
-                        <uc:Province Rank="5" ProvinceName="Lâm Đồng" Population="100" IsLevelUp="True"/>
-                        <uc:Province Rank="6" ProvinceName="Quảng Ngãi" Population="100" IsLevelUp="True"/>
-                        <uc:Province Rank="7" ProvinceName="Hà Tĩnh" Population="100" IsLevelUp="True"/>
+                        <uc:Province Rank="1" ProvinceName="Lâm Đồng" Population="3" IsLevelUp="True"/>
+                        <uc:Province Rank="2" ProvinceName="Kon Tum" Population="2" IsLevelUp="True"/>
                     </ListView>
                 </Grid>
             </Border>

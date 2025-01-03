@@ -24,7 +24,10 @@ namespace Apartment_Management.Model
 		public string DwellerEmail { get; set; }
 
 		[JsonProperty("dweller_birthday")]
-		public string DwellerBirth { get; set; }
+		public DateTime DwellerBirth { get; set; }
+
+        [JsonProperty("dweller_hometown")]
+        public String DwellerHomeTown { get; set; }
 
 		[JsonProperty("dweller_sex")]
 		public string DwellerSex { get; set; }
@@ -50,7 +53,7 @@ namespace Apartment_Management.Model
 		public Dweller()
 		{
 		}
-		public Dweller(string dwellerID, string dwellerName, string dwellerPhone, string dwellerEmail, string dwellerBirth, string dwellerSex, string dwellerPassword, DateTime dweller_Date_Start, DateTime create_At, string create_By, string roomID, string dwellerLogin)
+		public Dweller(string dwellerID, string dwellerName, string dwellerPhone, string dwellerEmail, DateTime dwellerBirth, string dwellerSex, string dwellerPassword, DateTime dweller_Date_Start, DateTime create_At, string create_By, string roomID, string dwellerLogin)
 		{
 			DwellerID = dwellerID;
 			DwellerName = dwellerName;
@@ -65,5 +68,21 @@ namespace Apartment_Management.Model
 			RoomID = roomID;
 			DwellerLogin = dwellerLogin;
 		}
-	}
+		public Dweller(Dweller dweller)
+		{
+			DwellerID = dweller.DwellerID;
+			DwellerName = dweller.DwellerName;
+			DwellerPhone = dweller.DwellerPhone;
+			DwellerEmail = dweller.DwellerEmail;
+			DwellerBirth = dweller.DwellerBirth;
+			DwellerSex = dweller.DwellerSex;
+			DwellerPassword = dweller.DwellerPassword;
+			Dweller_Date_Start = dweller.Dweller_Date_Start;
+            Create_At = dweller.Create_At;
+            Create_By = dweller.Create_By;
+            RoomID = dweller.RoomID;
+            DwellerLogin = dweller.DwellerLogin;
+        }
+    }
+	
 }

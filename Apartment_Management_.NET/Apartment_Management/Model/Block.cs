@@ -3,17 +3,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace Apartment_Management.Model
 {
 	public class Block
 	{
-		private string BlockID { get; set; }
-		public string Block_Name { get; set; }
-		public int No_Floors { get; set; }
-		public int No_Rooms { get; set; }
-		public int No_Rooms_Available { get; set; }
-		public DateTime Date_Created { get; set; }
+
+		public string BlockID { get; set; }
+
+        [JsonProperty("block_name")]
+        public string Block_Name { get; set; }
+
+        [JsonProperty("block_floor")]
+        public int No_Floors { get; set; }
+
+        [JsonProperty("block_room")]
+        public int No_Rooms { get; set; }
+
+        [JsonProperty("block_room_available")]
+        public int No_Rooms_Available { get; set; }
+
+        [JsonProperty("create_at")]
+        public DateTime Date_Created { get; set; }
 		public DateTime Date_Updated { get; set; }
 		public string Created_By { get; set; }
 		public string Updated_By { get; set; }
@@ -35,5 +47,18 @@ namespace Apartment_Management.Model
 			Updated_By = updated_By;
 			Delete_At = delete_At;
 		}
-	}
+        public Block(Block block)
+        {
+            BlockID = block.BlockID;
+            Block_Name = block.Block_Name;
+            No_Floors = block.No_Floors;
+            No_Rooms = block.No_Rooms;
+            No_Rooms_Available = block.No_Rooms_Available;
+            Date_Created = block.Date_Created;
+            Date_Updated = block.Date_Updated;
+            Created_By = block.Created_By;
+            Updated_By = block.Updated_By;
+            Delete_At = block.Delete_At;
+        }
+    }
 }

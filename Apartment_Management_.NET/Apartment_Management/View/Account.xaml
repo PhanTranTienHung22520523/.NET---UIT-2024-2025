@@ -4,8 +4,12 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Apartment_Management.View"
+             xmlns:vm="clr-namespace:Apartment_Management.ViewModel"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.DataContext>
+        <vm:Account_View_Model/>
+    </UserControl.DataContext>
     <Grid Background="#151f2d">
         <!-- Nút quay lại -->
         <!--<Button Content="↩"
@@ -36,17 +40,32 @@
 
             <!-- Thông tin tài khoản -->
             <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="0,20,0,0">
-                <TextBlock Text="Full Name: ABC" FontSize="16" Foreground="White" Margin="0,10,0,0"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Full Name: " FontSize="16" Foreground="White" Margin="0,10,0,0"/>
+                    <TextBlock Text="{Binding CurrentUser.UserName}" FontSize="16" Foreground="White" Margin="0,10,0,0"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Sex: " FontSize="16" Foreground="White" Margin="0,10,0,0"/>
+                    <TextBlock Text="{Binding CurrentUser.UserSex}" FontSize="16" Foreground="White" Margin="0,10,0,0"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="D.O.B: " FontSize="16" Foreground="White" Margin="0,10,0,0"/>
+                    <TextBlock Text="{Binding CurrentUser.UserBirth}" FontSize="16" Foreground="White" Margin="0,10,0,0"/>
+                </StackPanel>
 
-                <TextBlock Text="D.O.B: 31/03/2004" FontSize="16" Foreground="White" Margin="0,10,0,0"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Email:" FontSize="16" Foreground="White" Margin="0,10,0,0"/>
+                    <TextBlock Text="{Binding CurrentUser.UserMail}" FontSize="16" Foreground="White" Margin="0,10,0,0"/>
 
-                <TextBlock Text="Email: ptth@gmail.com" FontSize="16" Foreground="White" Margin="0,10,0,0"/>
-
-                <TextBlock Text="Phone: 0123456789" FontSize="16" Foreground="White" Margin="0,10,0,0"/>
-
-                <TextBlock Text="Role: Administrator" FontSize="16" Foreground="White" Margin="0,10,0,0"/>
-
-                <TextBlock Text="Date Started: 01/01/2024" FontSize="16" Foreground="White" Margin="0,10,0,0"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Phone: " FontSize="16" Foreground="White" Margin="0,10,0,0"/>
+                    <TextBlock Text="{Binding CurrentUser.UserPhone}" FontSize="16" Foreground="White" Margin="0,10,0,0"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Date Started: " FontSize="16" Foreground="White" Margin="0,10,0,0"/>
+                    <TextBlock Text="{Binding CurrentUser.Date_Start}" FontSize="16" Foreground="White" Margin="0,10,0,0"/>
+                </StackPanel>
             </StackPanel>
         </Grid>
     </Grid>

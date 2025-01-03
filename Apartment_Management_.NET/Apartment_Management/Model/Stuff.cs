@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,8 +9,11 @@ namespace Apartment_Management.Model
 {
 	public class Stuff
 	{
-		private string StuffID { get; set; }
-		public string Stuff_Name { get; set; }
+		public string StuffID { get; set; }
+
+        [JsonProperty("stf_name")]
+
+        public string Stuff_Name { get; set; }
 		public int Stuff_Number { get; set; }
 		private string RoomID { get; set; }
 		public DateTime Create_At { get; set; }

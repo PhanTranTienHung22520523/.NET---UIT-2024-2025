@@ -12,33 +12,42 @@ using System.Windows.Input;
 using Apartment_Management.Helper;
 using System.Linq;
 using System.Windows.Controls;
+using Apartment_Management.View;
+using System.Threading.Tasks;
 
 
 namespace Apartment_Management.ViewModel
 {
-	public class Contract_View_Model:INotifyPropertyChanged
+    internal class Contract_View_Model: Base_View_Model
 	{
 		private const string firebaseUrl= "https://apartment-management-2h-default-rtdb.firebaseio.com/";
 		private readonly FirebaseClient _firebaseClient;
 
 		public ObservableCollection<Contract> Contracts { get; set; }
 		public ObservableCollection<Contract> AllContracts { get; set; }
+        public Account Account;
+        private MainWindowViewModel _mainViewModel;
 
-		public Contract_View_Model()
+        public Contract_View_Model() { }
+
+        public Contract_View_Model(MainWindowViewModel mainWindow)
 		{
 			_firebaseClient = new FirebaseClient(firebaseUrl);
+			_mainViewModel = mainWindow;
 			Contracts = new ObservableCollection<Contract>();
 			AllContracts = new ObservableCollection<Contract>();
 			LoadContractAsync();
 			NotificationCommand = new RelayCommand(OnNotification);
-			AccountCommand = new RelayCommand(OnAccount);
+			AccountCommand = new RelayCommand(async _ => await OnAccount());
 			AddContractCommand = new RelayCommand(OnAddContract);
 			SearchCommand = new RelayCommand<string>(OnSearch);
-		}
+            OpenDetails = new RelayCommand(OnOpenDetails);
 
-		
+        }
 
-		private async void LoadContractAsync()
+
+
+        private async void LoadContractAsync()
 		{
 			try
 			{
@@ -118,9 +127,11 @@ namespace Apartment_Management.ViewModel
 		public ICommand AccountCommand { get; set; }
 		public ICommand AddContractCommand { get; set; }
 		public ICommand SearchCommand { get; set; }
+        public ICommand OpenDetails { get; set; }
 
 
-		private string _searchText;
+
+        private string _searchText;
 		public string SearchText
 		{
 			get => _searchText;
@@ -133,7 +144,35 @@ namespace Apartment_Management.ViewModel
 				}
 			}
 		}
-		private void OnSearch(string obj)
+        private Contract _selected;
+        public Contract Selected
+        {
+            get => _selected;
+            set
+            {
+                if (_selected != value)
+                {
+                    _selected = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+        private void OnOpenDetails(object obj)
+        {
+            if (Selected != null)
+            {
+                var detailWindow = new ContractDetails
+                {
+                    DataContext = new ContractDetail_View_Model(Selected)
+                };
+                detailWindow.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Please select a contract");
+            }
+        }
+        private void OnSearch(string obj)
 		{
 			if (string.IsNullOrWhiteSpace(SearchText))
 			{
@@ -186,11 +225,14 @@ namespace Apartment_Management.ViewModel
 
 		}
 
-		private void OnAccount(object obj)
+		private async Task OnAccount( )
 		{
-			MainWindow mainWindow = new MainWindow();
-			mainWindow.Content = new View.Account();
-		}
+            Account = new Account()
+            {
+                DataContext = new Account_View_Model()
+            };
+            _mainViewModel.CurrentView = Account;
+        }
 
 		private void OnNotification(object obj)
 		{

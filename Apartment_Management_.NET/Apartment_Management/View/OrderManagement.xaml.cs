@@ -24,5 +24,7 @@ namespace Apartment_Management.View
 		{
 			InitializeComponent();
 		}
-	}
+
+
+    }
 }

@@ -28,17 +28,61 @@ namespace Apartment_Management.Service
 				.Select(item => item.Object)
 				.ToList();
 		}
+        public async Task<List<T>> GetDataAsync<T>(string path, string idPropertyName) where T : new()
+        {
+            return (await _firebaseClient
+                .Child(path)
+                .OnceAsync<T>())
+                .Select(item =>
+                {
+                    var obj = item.Object;
 
-		//Thêm dữ liệu vào Firebase
+                    // Sử dụng Reflection để gán ID vào thuộc tính tương ứng
+                    var idProperty = typeof(T).GetProperty(idPropertyName);
+                    if (idProperty != null && idProperty.CanWrite)
+                    {
+                        idProperty.SetValue(obj, item.Key); // Gán giá trị Key vào thuộc tính
+                    }
 
-		public async Task AddDataAsync<T>(string path, T data)
+                    return obj;
+                })
+                .ToList();
+        }
+
+
+        //Thêm dữ liệu vào Firebase
+
+        public async Task AddDataAsync<T>(string path, T data)
 		{
 			await _firebaseClient
 				.Child(path)
 				.PostAsync(data);
 		}
+        public async Task UpdateDataAsync<T>(string path, string key, T updatedData)
+        {
+            await _firebaseClient
+                .Child(path)
+                .Child(key)
+                .PutAsync(updatedData);
+        }
+        public async Task UpdateFieldAsync<T>(string path, string key, string fieldName, T value)
+        {
+            await _firebaseClient
+                .Child(path)
+                .Child(key)
+                .Child(fieldName)
+                .PutAsync(value);
+        }
+        public async Task UpdateNumberAsync<T>(string path, string key, string fieldName, T value)
+        {
+            await _firebaseClient
+                .Child(path)
+                .Child(key)
+                .Child(fieldName)
+                .PutAsync(value);
+        }
 
-		public async Task<int> GetTodayOrderCountAsync()
+        public async Task<int> GetTodayOrderCountAsync()
 		{
 			var today = DateTime.Now.ToString("yyyy-MM-dd"); // Ngày hôm nay dưới định dạng yyyy-MM-dd
 			var orders = await _firebaseClient
@@ -138,5 +182,20 @@ namespace Apartment_Management.Service
 
 			return thisMonthContracts.Count; // Trả về số lượng hợp đồng trong tháng
 		}
-	}
+        public async Task DeleteDataAsync(string path, string key)
+        {
+            try
+            {
+                await _firebaseClient
+                    .Child(path)
+                    .Child(key)
+                    .DeleteAsync();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error deleting data: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+    }
 }

@@ -1,4 +1,6 @@
-﻿using LiveCharts.Wpf.Charts.Base;
+﻿using Apartment_Management.View;
+using Apartment_Management.ViewModel;
+using LiveCharts.Wpf.Charts.Base;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,15 +27,15 @@ namespace Apartment_Management
 		public MainWindow()
 		{
 			InitializeComponent();
-			MainContent.Content = new View.Home();
-			Home_View.IsActive = true;
-			Room_Managemen.IsActive = false;
-			Dweller_Managemen.IsActive = false;
-			Employee_Management.IsActive = false;
-			Order_Management.IsActive = false;
-			Receipt_Management.IsActive = false;
-			Contract_Management.IsActive = false;
-			Finance_Management.IsActive = false;
+			//MainContent.Content = new View.Home();
+			//Home_View.IsActive = true;
+			//Block_Managemen.IsActive = false;
+			//Dweller_Managemen.IsActive = false;
+			//Employee_Management.IsActive = false;
+			//Order_Management.IsActive = false;
+			//Receipt_Management.IsActive = false;
+			//Contract_Management.IsActive = false;
+			//Finance_Management.IsActive = false;
 		}
 
 		public void NavigateToAccount()
@@ -43,9 +45,10 @@ namespace Apartment_Management
 
 		private void Border_MouseDown(object sender, MouseButtonEventArgs e)
 		{
-			if (e.ChangedButton == MouseButton.Left)
+			if (e.LeftButton == MouseButtonState.Pressed)
 			{
 				this.DragMove();
+
 			}
 		}
 
@@ -53,105 +56,108 @@ namespace Apartment_Management
 		{
 			MainContent.Content = new View.Home();
 			Home_View.IsActive = true;
-			Room_Managemen.IsActive = false;
+            Block_Managemen.IsActive = false;
 			Dweller_Managemen.IsActive = false;
 			Employee_Management.IsActive = false;
 			Order_Management.IsActive = false;
 			Receipt_Management.IsActive = false;
 			Contract_Management.IsActive = false;
-			Finance_Management.IsActive = false;
+			//Finance_Management.IsActive = false;
 
 		}
 
-		private void Room_Managemen_Click(object sender, RoutedEventArgs e)
+		private void Block_Managemen_Click(object sender, RoutedEventArgs e)
 		{
-			MainContent.Content = new View.RoomManagement();
+			MainContent.Content = new View.BlockManagement()
+			{
+				DataContext = new Block_Management_View_Model(new MainWindowViewModel())
+			};
 			Home_View.IsActive = false;
-			Room_Managemen.IsActive = true;
+			Block_Managemen.IsActive = true;
 			Dweller_Managemen.IsActive = false;
 			Employee_Management.IsActive = false;
 			Order_Management.IsActive = false;
 			Receipt_Management.IsActive = false;
 			Contract_Management.IsActive = false;
-			Finance_Management.IsActive = false;
+			//Finance_Management.IsActive = false;
 		}
 
 		private void Dweller_Managemen_Click(object sender, RoutedEventArgs e)
 		{
 			MainContent.Content = new View.DwellerManagement();
 			Home_View.IsActive = false;
-			Room_Managemen.IsActive = false;
+            Block_Managemen.IsActive = false;
 			Dweller_Managemen.IsActive = true;
 			Employee_Management.IsActive = false;
 			Order_Management.IsActive = false;
 			Receipt_Management.IsActive = false;
 			Contract_Management.IsActive = false;
-			Finance_Management.IsActive = false;
+			//Finance_Management.IsActive = false;
 		}
 
 		private void Employee_Management_Click(object sender, RoutedEventArgs e)
 		{
 			MainContent.Content = new View.EmployeeManagement();
 			Home_View.IsActive = false;
-			Room_Managemen.IsActive = false;
+            Block_Managemen.IsActive = false;
 			Dweller_Managemen.IsActive = false;
 			Employee_Management.IsActive = true;
 			Order_Management.IsActive = false;
 			Receipt_Management.IsActive = false;
 			Contract_Management.IsActive = false;
-			Finance_Management.IsActive = false;
+			//Finance_Management.IsActive = false;
 		}
 
 		private void Order_Management_Click(object sender, RoutedEventArgs e)
 		{
 			MainContent.Content = new View.OrderManagement();
 			Home_View.IsActive = false;
-			Room_Managemen.IsActive = false;
+            Block_Managemen.IsActive = false;
 			Dweller_Managemen.IsActive = false;
 			Employee_Management.IsActive = false;
 			Order_Management.IsActive = true;
 			Receipt_Management.IsActive = false;
 			Contract_Management.IsActive = false;
-			Finance_Management.IsActive = false;
+			//Finance_Management.IsActive = false;
 		}
 
 		private void Receipt_Management_Click(object sender, RoutedEventArgs e)
 		{
 			MainContent.Content = new View.ReceiptManagement();
 			Home_View.IsActive = false;
-			Room_Managemen.IsActive = false;
+            Block_Managemen.IsActive = false;
 			Dweller_Managemen.IsActive = false;
 			Employee_Management.IsActive = false;
 			Order_Management.IsActive = false;
 			Receipt_Management.IsActive = true;
 			Contract_Management.IsActive = false;
-			Finance_Management.IsActive = false;
+			//Finance_Management.IsActive = false;
 		}
 
 		private void Contract_Management_Click(object sender, RoutedEventArgs e)
 		{
 			MainContent.Content = new View.ContractManagement();
 			Home_View.IsActive = false;
-			Room_Managemen.IsActive = false;
+            Block_Managemen.IsActive = false;
 			Dweller_Managemen.IsActive = false;
 			Employee_Management.IsActive = false;
 			Order_Management.IsActive = false;
 			Receipt_Management.IsActive = false;
 			Contract_Management.IsActive = true;
-			Finance_Management.IsActive = false;
+			//Finance_Management.IsActive = false;
 		}
 
 		private void Finance_Management_Click(object sender, RoutedEventArgs e)
 		{
 			MainContent.Content = new View.FinanceManagement();
 			Home_View.IsActive = false;
-			Room_Managemen.IsActive = false;
+            Block_Managemen.IsActive = false;
 			Dweller_Managemen.IsActive = false;
 			Employee_Management.IsActive = false;
 			Order_Management.IsActive = false;
 			Receipt_Management.IsActive = false;
 			Contract_Management.IsActive = false;
-			Finance_Management.IsActive = true;
+			//Finance_Management.IsActive = true;
 		}
 
 		private void menubutton_Click_1(object sender, RoutedEventArgs e)

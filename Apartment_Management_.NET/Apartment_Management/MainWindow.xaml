@@ -5,14 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:uc="clr-namespace:Apartment_Management.UserControls"
         xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
-        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        xmlns:vm="clr-namespace:Apartment_Management.ViewModel"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf" xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
         Height="760" Width="1280"
         ResizeMode="NoResize"
         AllowsTransparency="True"
         WindowStyle="None"
         WindowStartupLocation="CenterScreen"
         Background="Transparent">
-
+    <Window.DataContext>
+        <vm:MainWindowViewModel/>
+    </Window.DataContext>
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="boolToVis"/>
     </Window.Resources>
@@ -44,20 +47,74 @@
                         </StackPanel>
 
                         <!--MenuButton-->
-                        <uc:menubutton Icon="HomeVariant"  ToolTip="Home"  Tag="Home" x:Name="Home_View" Click="Home_View_Click" Cursor="Hand"/>
-                        <uc:menubutton Icon="Greenhouse" ToolTip="Room Management"  Tag="RoomManagement" x:Name="Room_Managemen" Click="Room_Managemen_Click" Cursor="Hand"/>
-                        <uc:menubutton Icon="Human" ToolTip="Dweller Management" Tag="DwellerManagement" x:Name="Dweller_Managemen" Click="Dweller_Managemen_Click" Cursor="Hand"/>
-                        <uc:menubutton Icon="HumanEdit" ToolTip="Employee Management"  Tag="EmployeeManagement" x:Name="Employee_Management" Click="Employee_Management_Click" Cursor="Hand"/>
-                        <uc:menubutton Icon="OrderAlphabeticalAscending" ToolTip="Order Management"  Tag="OrderManagement" x:Name="Order_Management" Click="Order_Management_Click" Cursor="Hand"/>
-                        <uc:menubutton Icon="Receipt" ToolTip="Receipt Management" Tag="ReceiptManagement" x:Name="Receipt_Management" Click="Receipt_Management_Click" Cursor="Hand"/>
-                        <uc:menubutton Icon="Passport" ToolTip="Contract Management"  Tag="ContractManagement" x:Name="Contract_Management" Click="Contract_Management_Click" Cursor="Hand"/>
-                        <uc:menubutton Icon="Cash" ToolTip="Finance Management"  Tag="FinanceManagement" x:Name="Finance_Management" Click="Finance_Management_Click" Cursor="Hand"/>
+                        <uc:menubutton Icon="HomeVariant"  ToolTip="Home"  Tag="Home" x:Name="Home_View" Cursor="Hand" IsActive="{Binding IsHomeActive}">
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="PreviewMouseLeftButtonDown">
+                                    <i:InvokeCommandAction Command="{Binding ShowHomeViewCommand}" />
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </uc:menubutton>
+                        <uc:menubutton Icon="Greenhouse" ToolTip="Room Management"  Tag="RoomManagement" x:Name="Block_Managemen" IsActive="{Binding IsBlockManagementActive}" Cursor="Hand">
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="PreviewMouseLeftButtonDown">
+                                    <i:InvokeCommandAction Command="{Binding ShowBlockViewCommand}" />
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </uc:menubutton>
+                        <uc:menubutton Icon="Human" ToolTip="Dweller Management" Tag="DwellerManagement" x:Name="Dweller_Managemen" IsActive="{Binding IsDwellerManagementActive}" Cursor="Hand">
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="PreviewMouseLeftButtonDown">
+                                    <i:InvokeCommandAction Command="{Binding ShowDwellerViewCommand}" />
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </uc:menubutton>
+                        <uc:menubutton Icon="HumanEdit" ToolTip="Employee Management"  Tag="EmployeeManagement" x:Name="Employee_Management" IsActive="{Binding IsEmployeeManagementActive}" Cursor="Hand">
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="PreviewMouseLeftButtonDown">
+                                    <i:InvokeCommandAction Command="{Binding ShowEmployeeViewCommand}" />
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </uc:menubutton>
+                        <uc:menubutton Icon="OrderAlphabeticalAscending" ToolTip="Order Management"  Tag="OrderManagement" x:Name="Order_Management" IsActive="{Binding IsOrderManagementActive}" Cursor="Hand">
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="PreviewMouseLeftButtonDown">
+                                    <i:InvokeCommandAction Command="{Binding ShowOrderViewCommand}" />
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </uc:menubutton>
+                        <uc:menubutton Icon="Receipt" ToolTip="Receipt Management" Tag="ReceiptManagement" x:Name="Receipt_Management" IsActive="{Binding IsReceiptManagementActive}" Cursor="Hand">
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="PreviewMouseLeftButtonDown">
+                                    <i:InvokeCommandAction Command="{Binding ShowReceiptViewCommand}" />
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </uc:menubutton>
+                        <uc:menubutton Icon="Passport" ToolTip="Contract Management"  Tag="ContractManagement" x:Name="Contract_Management" IsActive="{Binding IsContractManagementActive}" Cursor="Hand">
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="PreviewMouseLeftButtonDown">
+                                    <i:InvokeCommandAction Command="{Binding ShowContractViewCommand}" />
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </uc:menubutton>
+                        <!--<uc:menubutton Icon="Cash" ToolTip="Finance Management"  Tag="FinanceManagement" x:Name="Finance_Management" IsActive="{Binding IsFinanceManagementActive}" Cursor="Hand">
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="PreviewMouseLeftButtonDown">
+                                    <i:InvokeCommandAction Command="{Binding ShowFinanceViewCommand}" />
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </uc:menubutton>-->
                     </StackPanel>
-                    <uc:menubutton Icon="Power" VerticalAlignment="Top" Margin="0,650,0,0" ToolTip="Power Off" Click="menubutton_Click_1" Cursor="Hand"/>
+                    <uc:menubutton Icon="Power" VerticalAlignment="Top" Margin="0,650,0,0" ToolTip="Power Off"  Cursor="Hand">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="PreviewMouseLeftButtonDown">
+                                <i:InvokeCommandAction Command="{Binding QuitCommand}" />
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                    </uc:menubutton>
                 </Grid>
             </Border>
 
-            <ContentControl x:Name="MainContent" Grid.Column="1" Margin="20" />
+            <ContentControl x:Name="MainContent" Grid.Column="1" Margin="20" Content="{Binding CurrentView}" />
 
             <!--Top Menu-->
             <!--

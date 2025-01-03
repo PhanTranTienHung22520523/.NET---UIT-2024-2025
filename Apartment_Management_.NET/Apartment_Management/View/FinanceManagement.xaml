@@ -7,6 +7,7 @@
              xmlns:uc="clr-namespace:Apartment_Management.UserControls"
              xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
              xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+             
              mc:Ignorable="d">
     <Grid Background="#151f2d" Height="750">
         <Grid.RowDefinitions>
@@ -42,7 +43,7 @@
                 </Button>
 
 
-                <Button Style="{StaticResource topMenuButton}" Background="#1e2e44" Margin="0 0 70 0" x:Name="btn_acc" Click="btn_acc_Click" Cursor="Hand">
+                <Button Style="{StaticResource topMenuButton}" Background="#1e2e44" Margin="0 0 70 0" x:Name="btn_acc"  Cursor="Hand">
                     <Icon:PackIconMaterial Kind="Account" Style="{StaticResource topMenuButtonIcon}" />
                 </Button>
             </StackPanel>

@@ -12,11 +12,12 @@ using Apartment_Management.Model;
 using Firebase.Database;
 using Newtonsoft.Json;
 using System.Windows;
+using Apartment_Management.View;
 
 
 namespace Apartment_Management.ViewModel
 {
-	public class Receipt_View_Model:INotifyPropertyChanged
+	internal class Receipt_View_Model:Base_View_Model
 	{
 		private const string firebaseUrl = "https://apartment-management-2h-default-rtdb.firebaseio.com/";
 		private readonly FirebaseClient _firebaseClient;
@@ -24,10 +25,15 @@ namespace Apartment_Management.ViewModel
 		public ObservableCollection<Receipt> Receipts { get; set; }
 		public ObservableCollection<Receipt> PaidReceipts { get; set; }
 		public ObservableCollection<Receipt> UnpaidReceipts { get; set; }
+        private MainWindowViewModel _mainViewModel;
+        public Account Account;
 
-		public Receipt_View_Model()
+
+        public Receipt_View_Model() { }
+        public Receipt_View_Model(MainWindowViewModel mainWindow)
 		{
 			_firebaseClient = new FirebaseClient(firebaseUrl);
+			_mainViewModel = mainWindow;
 			Receipts = new ObservableCollection<Receipt>();
 			UnpaidReceipts = new ObservableCollection<Receipt>();
 			PaidReceipts = new ObservableCollection<Receipt>();
@@ -126,8 +132,12 @@ namespace Apartment_Management.ViewModel
 
 		private void OnAccount(object obj)
 		{
-			MessageBox.Show("Acc click");
-		}
+            Account = new Account()
+            {
+                DataContext = new Account_View_Model()
+            };
+            _mainViewModel.CurrentView = Account;
+        }
 
 		private void OnNotification(object obj)
 		{

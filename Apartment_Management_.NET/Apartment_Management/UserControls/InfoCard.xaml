@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:Apartment_Management.UserControls"
              xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
              Name="infoCard">
-    <Border Margin="0 0 0 20">
+    <Border Margin="0 0 0 20" MouseLeftButtonDown="Border_MouseLeftButtonDown">
         <Border.Style>
             <Style TargetType="Border" BasedOn="{StaticResource mainBorder}">
                 <Setter Property="BorderThickness" Value="1.5"/>

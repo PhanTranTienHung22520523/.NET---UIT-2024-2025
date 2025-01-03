@@ -63,18 +63,53 @@ namespace Apartment_Management.UserControls
         public static readonly DependencyProperty IsActiveProperty =
             DependencyProperty.Register("IsActive", typeof(bool), typeof(InfoCard));
 
-		public event RoutedEventHandler Click
-		{
-			add { AddHandler(ClickEvent, value); }
-			remove { RemoveHandler(ClickEvent, value); }
-		}
+        public event RoutedEventHandler Click
+        {
+            add { AddHandler(ClickEvent, value); }
+            remove { RemoveHandler(ClickEvent, value); }
+        }
 
-		public static readonly RoutedEvent ClickEvent =
-			EventManager.RegisterRoutedEvent("Click", RoutingStrategy.Bubble, typeof(RoutedEventHandler), typeof(InfoCard));
+        public static readonly RoutedEvent ClickEvent =
+            EventManager.RegisterRoutedEvent("Click", RoutingStrategy.Bubble, typeof(RoutedEventHandler), typeof(InfoCard));
 
-		private void Button_Click(object sender, RoutedEventArgs e)
-		{
-			RaiseEvent(new RoutedEventArgs(ClickEvent));
-		}
-	}
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            RaiseEvent(new RoutedEventArgs(ClickEvent));
+        }
+
+        public static readonly DependencyProperty CommandProperty =
+           DependencyProperty.Register("Command", typeof(ICommand), typeof(InfoCard), new PropertyMetadata(null));
+
+        public ICommand Command
+        {
+            get { return (ICommand)GetValue(CommandProperty); }
+            set { SetValue(CommandProperty, value); }
+        }
+
+        // DependencyProperty for CommandParameter
+        public static readonly DependencyProperty CommandParameterProperty =
+            DependencyProperty.Register("CommandParameter", typeof(object), typeof(InfoCard), new PropertyMetadata(null));
+
+        public object CommandParameter
+        {
+            get { return GetValue(CommandParameterProperty); }
+            set { SetValue(CommandParameterProperty, value); }
+        }
+
+        private void InfoCard_Click(object sender, RoutedEventArgs e)
+        {
+            if (Command != null && Command.CanExecute(CommandParameter))
+            {
+                Command.Execute(CommandParameter);
+            }
+        }
+
+        private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            if (Command != null && Command.CanExecute(CommandParameter))
+            {
+                Command.Execute(CommandParameter);
+            }
+        }
+    }
 }
