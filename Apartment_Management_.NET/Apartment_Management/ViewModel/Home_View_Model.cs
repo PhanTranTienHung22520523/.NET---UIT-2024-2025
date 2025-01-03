@@ -16,6 +16,8 @@ using Firebase.Database.Query;
 using Newtonsoft.Json;
 using System.Globalization;
 using System.Windows.Controls;
+using LiveCharts;
+using LiveCharts.Wpf;
 
 
 namespace Apartment_Management.ViewModel
@@ -54,7 +56,12 @@ namespace Apartment_Management.ViewModel
 
 		public List<int> listPublicOrders { get; set; }
 		public List<int> listResidencedOrders { get; set; }
-		public string[] Months { get; set; }
+		public List<string> MonthLabels { get; set; }
+
+		public SeriesCollection ChartData { get; set; }
+
+		public ChartValues<int> publicor = new ChartValues<int>();
+		public ChartValues<int> resior = new ChartValues<int>();
 
 
 
@@ -82,6 +89,8 @@ namespace Apartment_Management.ViewModel
 		private int _newContracts;
 		private int _lastmonthContracts;
 
+		public string publica;
+		public string resida;
 
 
 
@@ -90,6 +99,20 @@ namespace Apartment_Management.ViewModel
 		public event PropertyChangedEventHandler PropertyChanged;
 
 		// Thuộc tính
+
+
+		public string Publica
+		{
+			get => publica;
+			set { publica = value;OnPropertyChanged(nameof(Publica)); }
+		}
+
+
+		public string Resida
+		{
+			get => resida;
+			set { resida = value; OnPropertyChanged(nameof(Resida)); }
+		}
 
 
 		public double SolveToday
@@ -205,9 +228,41 @@ namespace Apartment_Management.ViewModel
 			_filterOldOrder = new ObservableCollection<Order>();
 			_filterOldSolvedOrder = new ObservableCollection<Order>();
 
+			
+
 			listPublicOrders = new List<int>();
 			listResidencedOrders = new List<int>();
-			Months = new string[] { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" };
+
+			
+
+
+
+			ChartData = new SeriesCollection
+			{
+				new StackedColumnSeries
+				{
+					Fill = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromArgb(255, 144, 238, 144)),
+					MaxColumnWidth=15,
+					Title = "Public Orders",
+					Values = publicor
+				},
+				new StackedColumnSeries
+				{
+					Fill = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromArgb(255, 250, 235, 215)),
+					MaxColumnWidth=15,
+					Title = "Residence Orders",
+					Values = resior
+				}
+
+			};
+			MonthLabels = new List<string>
+	{
+		"Jan", "Feb", "Mar", "Apr", "May", "Jun",
+		"Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+	};
+
+			listPublicOrders =Enumerable.Repeat(0,12).ToList();
+			listResidencedOrders = Enumerable.Repeat(0, 12).ToList();
 
 
 			LoadData();
@@ -354,6 +409,7 @@ namespace Apartment_Management.ViewModel
 		.GroupBy(o => new { o.Create_At.Year, o.Create_At.Month })
 		.Select(group => new
 		{
+			Month = group.Key.Month,
 			PublicServiceCount = group.Count(o => o.Type == "Public"),  // Đếm đơn hàng loại Public
 			ResidenceServiceCount = group.Count(o => o.Type == "Residence")  // Đếm đơn hàng loại Residence
 		})
@@ -361,8 +417,23 @@ namespace Apartment_Management.ViewModel
 
 				foreach (var monthData in ordersByMonth)
 				{
-					listPublicOrders.Add(monthData.PublicServiceCount);
-					listResidencedOrders.Add(monthData.ResidenceServiceCount);
+					int MonthIndex = monthData.Month - 1;
+					listPublicOrders[MonthIndex] = monthData.PublicServiceCount;
+					listResidencedOrders[MonthIndex]=monthData.ResidenceServiceCount;
+				}
+
+				for(int i=0;i<listPublicOrders.Count; i++)
+				{
+					if (i == listPublicOrders.Count - 1)
+						publica += listPublicOrders[i].ToString();
+					publica += listPublicOrders[i].ToString() + ",";
+				}
+
+				for (int i=0;i<listResidencedOrders.Count;i++)
+				{
+					if (i == listResidencedOrders.Count - 1)
+						resida += listResidencedOrders[i].ToString();
+					resida += listResidencedOrders[i].ToString() + ",";
 				}
 				foreach (var order in _NewOrder)
 				{
@@ -426,6 +497,17 @@ namespace Apartment_Management.ViewModel
 				SolveToday = (double)((double)SolvedOrders / TodaysOrders * 100);
 				SolveYesterday = (double)((double)YesterdaysolvedOrders / YesterdayOrders * 100);
 
+				
+
+				foreach (var item in listPublicOrders)
+				{
+					publicor.Add(item);
+				}
+
+				foreach (var item in listResidencedOrders)
+				{
+					resior.Add(item);
+				}
 
 			}
 			catch (Exception e)
@@ -503,6 +585,8 @@ namespace Apartment_Management.ViewModel
 				throw;
 			}
 		}
+
+
 
 		protected virtual void OnPropertyChanged(string propertyName)
 		{

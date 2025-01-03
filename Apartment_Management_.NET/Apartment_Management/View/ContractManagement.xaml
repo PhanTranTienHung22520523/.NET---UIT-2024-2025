@@ -63,6 +63,7 @@ Visibility="{Binding ElementName=txtbox_find, Path=Text.IsEmpty, Converter={Stat
                   RowHeight="30"
                   FontSize="15"
                   IsReadOnly="True"
+                  SelectedItem="{Binding Selected}"
                   >
             <i:Interaction.Triggers>
                 <i:EventTrigger EventName="MouseDoubleClick">

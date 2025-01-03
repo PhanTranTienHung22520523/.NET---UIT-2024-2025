@@ -317,9 +317,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\Icons\" />
+    <Folder Include="Assets\Images\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\Images\ApartmentBackground.png" />
     <Resource Include="ILLink\ILLink.Descriptors.LibraryBuild.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

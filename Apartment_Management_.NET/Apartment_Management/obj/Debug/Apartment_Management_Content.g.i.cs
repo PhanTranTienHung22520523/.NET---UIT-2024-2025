@@ -9,6 +9,5 @@
 //------------------------------------------------------------------------------
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/apartment-management-2h-firebase-adminsdk-17i68-032a678aec.json")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/images/apartmentbackground.png")]
 
 

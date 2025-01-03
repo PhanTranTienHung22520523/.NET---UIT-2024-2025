@@ -54,7 +54,7 @@
             <TextBlock Text="Room:" Grid.Row="3" Grid.Column="0" Margin="0,0,10,0" VerticalAlignment="Center" Foreground="White"/>
             <TextBlock x:Name="RoomIdComboBox" Grid.Row="3" Height="30" Margin="176,10,0,10" 
                    Foreground="White"
-                   Text="{Binding room_namwe}" Grid.ColumnSpan="3"/>
+                   Text="{Binding room_name}" Grid.ColumnSpan="3"/>
 
             <!-- Contract Description -->
             <TextBlock Text="Description:" Grid.Row="4" Grid.Column="0" Margin="0,0,10,0" VerticalAlignment="Center" Foreground="White"/>
